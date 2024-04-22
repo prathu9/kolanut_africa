@@ -1,6 +1,16 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 const Footer = () => {
+    const [inputValue, setInputValue] = useState();
+
+    const handleChange = (event) => {
+        const value = event.target.value;
+console.log(value)
+        setInputValue(value);
+    }
+
     return(
         <footer className="pt-[120px] px-24 text-white bg-[#282828] min-h-[523px]">
             <div className="flex justify-between">
@@ -41,11 +51,27 @@ const Footer = () => {
                 <div>
                   <h3 className="mb-4 text-[32px] font-bold leading-[42px]">Stay in the loop</h3>
                   <div className="flex gap-4">
-                    <input className="w-[232px h-[45px] p-3 rounded" type="text"/>
+                    <input value={inputValue} onChange={handleChange} className="w-[232px] h-[45px] p-3 rounded text-[#505050]" type="text"/>
                     <button className="px-8 py-[11] rounded text-lg bg-custom-red w-[152px] h-[45px]">Subscribe</button>
                   </div>
-                  <p>By subscribing you agree to with our Privacy Policy</p>
+                  <p className="mt-4 text-sm font-normal leading-[18.62px] font-sans">By subscribing you agree to with our Privacy Policy</p>
                 </div>    
+            </div>
+            <div className="flex justify-between mt-12 pt-8 border-t border-white">
+                <ul className="flex gap-6 text-sm leading-[17.64px]">
+                    <li>
+                        Privacy Policy
+                    </li>
+                    <li>
+                        Terma of Service
+                    </li>
+                    <li>
+                        Cookies Settings
+                    </li>
+                </ul>
+                <p className="font-normal text-sm leading-[17.64px]">
+                    © 2024. All rights reserved.
+                </p>
             </div>
         </footer>
     )
