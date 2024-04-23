@@ -62,7 +62,18 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="h-[359px] bg-black"></div>
+      <div className="relative h-[359px] flex justify-center items-center">
+        <Image className="max-w-[1440px]" sizes="100vw" fill src="/homepage/wave-vector.svg" alt="wave"/>
+        <div className="relative z-10">
+          <h2 className="mb-[54px] text-[#FAFBFF] text-center text-2xl leading-[30.24px] font-semibold">We partner with Top Insurance companies</h2>
+          <div className="flex gap-[176.59px]">
+            <Image src="/homepage/partner-1.svg" width={158.94} height={54} alt="partner"/>
+            <Image src="/homepage/partner-2.svg" width={303.76} height={54} alt="partner"/>
+            <Image src="/homepage/partner-3.svg" width={71.52} height={54} alt="partner"/>
+            <Image src="/homepage/partner-4.svg" width={218} height={54} alt="partner"/>
+          </div>
+        </div>
+      </div>
       <div className="pt-[300px] pb-[120px] px-24">
         <h2 className="mb-[74px] text-[40px] leading-[50px] font-bold text-center text-[#5B5B5B]">
           Why choose us?
