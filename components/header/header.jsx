@@ -1,10 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
     return(
         <div className="mx-auto flex justify-between align-middle max-w-[1440px] px-[100px] py-[24px]">
             <div>
-                <Image src="./logo.svg" width={196} height={76.74} alt="logo" />
+                <Link href="/">
+                    <Image src="./logo.svg" width={196} height={76.74} alt="logo" />
+                </Link>
             </div>
             <nav className="flex items-center">
                 <ul className="flex gap-10 w-[435px] h-[39px]">
@@ -18,7 +21,9 @@ const Header = () => {
                         Claims
                     </li>
                     <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
-                        About us
+                        <Link href="/about-us">
+                            About us
+                        </Link>
                     </li>
                 </ul>
             </nav>

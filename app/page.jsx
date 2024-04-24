@@ -80,7 +80,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-16">
           <div className="relative px-6 pt-[62px] basis-[48%] rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
-            <div className="absolute -top-8 bg-white px-[8.5px] py-[8.75px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+            <div className="absolute -top-8 bg-white px-[8.75px] py-[8.5px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/streamline-plump.svg"
                 width={44.5}
@@ -97,7 +97,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] basis-[48%]  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
-            <div className="absolute -top-8 bg-white px-[8.5px] py-[8.75px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+            <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/support.svg"
                 width={44.5}
@@ -114,7 +114,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] basis-[48%]  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
-            <div className="absolute -top-8 bg-white px-[8.5px] py-[8.75px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+            <div className="absolute -top-8 bg-white px-[15px] py-[7px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/coverage.svg"
                 width={44.5}
@@ -131,7 +131,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] basis-[48%] rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
-            <div className="absolute -top-8 bg-white px-[8.5px] py-[8.75px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+            <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/innovation.svg"
                 width={44.5}
