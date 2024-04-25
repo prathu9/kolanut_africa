@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
     return(
-        <div className="mx-auto flex justify-between align-middle max-w-[1440px] px-[100px] py-[24px]">
+        <div className="mx-auto flex justify-between align-middle max-w-[1920px] px-[100px] py-[24px]">
             <div>
                 <Link href="/">
                     <Image src="./logo.svg" width={196} height={76.74} alt="logo" />
@@ -15,7 +15,9 @@ const Header = () => {
                         How it works
                     </li>
                     <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
-                        Coverage
+                        <Link href="/coverage">
+                            Coverage
+                        </Link>
                     </li>
                     <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
                         Claims
