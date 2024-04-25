@@ -23,7 +23,7 @@ const Tabs = ({tabs, TabComponent, TabPanelComponent}) => {
             <div>
                 {
                     tabs.map((tab, index) => (
-                        <TabPanelComponent key={index} isActive={activeTab === index} content={tab.content} />
+                        <TabPanelComponent key={index} isActive={activeTab === index} title={tab.title} content={tab.content} />
                     ))
                 }
             </div>
