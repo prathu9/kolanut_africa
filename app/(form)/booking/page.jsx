@@ -4,8 +4,10 @@ import WizardForm, {
 } from "@/components/wizard-form/wizard-form";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import PropertyInfo from "./property-info";
+import PropertyInfoOwner from "./property-info-owner";
 import LocationInfo from "./location";
+import PersonalInfo from "./personal-info";
+import PropertyInfoRent from "./property-Info-rent";
 
 const BookingPage = () => {
   const [showWizard, setShowWizard] = useState(false);
@@ -16,16 +18,21 @@ const BookingPage = () => {
   const accommodationType = watch("accommodationType");
 
   const onSubmit = (data) => {
-    console.log(data); 
-    setShowWizard(true); 
-  }
+    console.log(data);
+    setShowWizard(true);
+  };
 
   return (
     <div className="relative z-10 w-fit h-fi=">
       {showWizard ? (
-        <WizardForm steps={2}>
-            <PropertyInfo />
-            <LocationInfo />
+        <WizardForm steps={3}>
+          {accommodationType === "own" ? (
+            <PropertyInfoOwner />
+          ) : (
+            <PropertyInfoRent />
+          )}
+          <LocationInfo />
+          <PersonalInfo />
         </WizardForm>
       ) : (
         <div className="max-w-[488px] h-fit px-[84px] py-10 rounded-3xl bg-white text-black">

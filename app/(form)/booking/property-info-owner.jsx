@@ -4,13 +4,14 @@ import Image from "next/image";
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 
-const PropertyInfo = () => {
+const PropertyInfoOwner = () => {
   const { currentStep, nextStep } = useContext(WizardContext);
-  const { register, watch } = useForm();
+  const { register, handleSubmit, watch } = useForm();
 
   const insureContent = watch("insureContent");
 
-  const onSubmit = () => {
+  const onSubmit = (data) => {
+    console.log(data);
     nextStep();
   };
 
@@ -23,7 +24,10 @@ const PropertyInfo = () => {
       <h1 className="mb-8 text-[32px] leading-[46.1px] text-center text-custom-grey font-semibold">
         Property info
       </h1>
-      <form onSubmit={onSubmit} className="w-[588px] h-fit flex flex-col">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="w-[588px] h-fit flex flex-col"
+      >
         <label className="mb-2 text-base leading-[23.2px] text-custom-grey font-medium">
           Type of property
         </label>
@@ -52,7 +56,7 @@ const PropertyInfo = () => {
             ₦
           </span>
           <input
-            className="w-full h-12 px-6 border border-[#10192C] rounded-xl"
+            className="w-full h-12 pl-10 pr-6 text-base font-normal leading-[23.2px] text-[#535763] border border-[#10192C] rounded-xl"
             type="text"
             {...register("property-value")}
           />
@@ -100,7 +104,7 @@ const PropertyInfo = () => {
         </div>
         <div className="flex items-center gap-3">
           <span className="w-12 h-12 flex items-center justify-center bg-[#F8F7F7] rounded-full">
-            <Image src="/form/unlock.svg" width={32} height={32} alt="fire" />
+            <Image src="/form/unlock.svg" width={32} height={32} alt="unlock" />
           </span>
           <div className="basis-[82%] max-w-[462px]">
             <h3 className="mb-2 text-base font-medium leading-[23.2px] text-custom-grey">
@@ -164,45 +168,54 @@ const PropertyInfo = () => {
             </label>
           </div>
         </div>
-        <div className="mt-4">
-          <label>Static property value(Furniture, Electronics)</label>
-          <div className="mt-2 mb-4 w-full relative">
-            <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
-              ₦
-            </span>
-            <input
-              className="w-full h-12 px-6 border border-[#C5C4C4] rounded-xl"
-              type="text"
-              {...register("property-value")}
-            />
+        {insureContent === "yes" ? (
+          <div className="mt-4">
+            <label>Static property value(Furniture, Electronics)</label>
+            <div className="mt-2 mb-4 w-full relative">
+              <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
+                ₦
+              </span>
+              <input
+                className="w-full h-12 pl-10 pr-6 border border-[#C5C4C4] rounded-xl"
+                type="text"
+                {...register("property-value")}
+              />
+            </div>
+            <label>
+              Luxury mobile property value (Jewelries, Expensive wrist watch )
+            </label>
+            <div className="mt-2 mb-4 w-full relative">
+              <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
+                ₦
+              </span>
+              <input
+                className="w-full h-12 pl-10 pr-6 border border-[#C5C4C4] rounded-xl"
+                type="text"
+                {...register("property-value")}
+              />
+            </div>
+            <label>Fully mobile property value (Laptops, Phones)</label>
+            <div className="mt-2 mb-4 w-full relative">
+              <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
+                ₦
+              </span>
+              <input
+                className="w-full h-12 pl-10 pr-6 border border-[#C5C4C4] rounded-xl"
+                type="text"
+                {...register("property-value")}
+              />
+            </div>
           </div>
-          <label>Luxury mobile property value  (Jewelries, Expensive wrist watch )</label>
-          <div className="mt-2 mb-4 w-full relative">
-            <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
-              ₦
-            </span>
-            <input
-              className="w-full h-12 px-6 border border-[#C5C4C4] rounded-xl"
-              type="text"
-              {...register("property-value")}
-            />
-          </div>
-          <label>Fully mobile property value  (Laptops, Phones)</label>
-          <div className="mt-2 mb-4 w-full relative">
-            <span className="absolute top-1/2 left-6 -translate-y-1/2 text-base">
-              ₦
-            </span>
-            <input
-              className="w-full h-12 px-6 border border-[#C5C4C4] rounded-xl"
-              type="text"
-              {...register("property-value")}
-            />
-          </div>
-        </div>
-        <input type="submit" value="continue" className="w-[127px] h-[50px] mt-12 mx-auto px-6 py-3 bg-custom-red text-white rounded-xl"/>
+        ) : null}
+
+        <input
+          type="submit"
+          value="continue"
+          className="w-[127px] h-[50px] mt-12 mx-auto px-6 py-3 bg-custom-red text-white rounded-xl cursor-pointer"
+        />
       </form>
     </div>
   );
 };
 
-export default PropertyInfo;
+export default PropertyInfoOwner;
