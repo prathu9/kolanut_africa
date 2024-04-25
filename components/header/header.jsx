@@ -33,9 +33,9 @@ const Header = () => {
                 <button className="px-6 py-3 bg-[#F0F0F0]">
                     Log in
                 </button>
-                <button className="px-6 py-3 text-custom-red border-2 border-custom-red rounded-xl">
+                <Link href="/booking" className="px-6 py-3 text-custom-red border-2 border-custom-red rounded-xl">
                     Get started
-                </button>
+                </Link>
             </div>
         </div>
     )
