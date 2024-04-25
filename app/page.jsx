@@ -7,33 +7,40 @@ const inter = Inter({ subsets: ["latin"] });
 const faq = [
   {
     title: "What’s Kolanut?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "How does Kolanut works?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "What type of home insurance policy is available?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "How much does it cost me to insure my home?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "How can I make a claim?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "What information do I need to provide for insurance?",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
   },
   {
     title: "How long does it take for my insurance confirmation",
-    description: "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us."
-  }
-]
+    description:
+      "You have questions?we have answers to all your questions and if you can’t find an answer to your question here, contact us.",
+  },
+];
 
 export default function Home() {
   return (
@@ -51,7 +58,12 @@ export default function Home() {
           <button className="bg-custom-red text-slate-100 text-lg leading-[26.1px] rounded-xl px-6 py-3">
             Get Instant Quote
           </button>
-          <p></p>
+          <p
+            className="mt-[76px] max-w-[499px] px-4 py-2 text-lg leading-[26.1px] font-normal text-custom-red bg-[#FEF0F1]"
+          >
+            Save up to N100,000 by comparing quotes from the top 10+ insurance
+            Companies
+          </p>
         </div>
         <div className="mt-[109.6px] rounded-3xl overflow-hidden">
           <Image
@@ -63,14 +75,42 @@ export default function Home() {
         </div>
       </div>
       <div className="relative h-[359px] flex justify-center items-center">
-        <Image className="max-w-[1440px]" sizes="100vw" fill src="/homepage/wave-vector.svg" alt="wave"/>
+        <Image
+          className="max-w-[1440px]"
+          sizes="100vw"
+          fill
+          src="/homepage/wave-vector.svg"
+          alt="wave"
+        />
         <div className="relative z-10">
-          <h2 className="mb-[54px] text-[#FAFBFF] text-center text-2xl leading-[30.24px] font-semibold">We partner with Top Insurance companies</h2>
+          <h2 className="mb-[54px] text-[#FAFBFF] text-center text-2xl leading-[30.24px] font-semibold">
+            We partner with Top Insurance companies
+          </h2>
           <div className="flex gap-[176.59px]">
-            <Image src="/homepage/partner-1.svg" width={158.94} height={54} alt="partner"/>
-            <Image src="/homepage/partner-2.svg" width={303.76} height={54} alt="partner"/>
-            <Image src="/homepage/partner-3.svg" width={71.52} height={54} alt="partner"/>
-            <Image src="/homepage/partner-4.svg" width={218} height={54} alt="partner"/>
+            <Image
+              src="/homepage/partner-1.svg"
+              width={158.94}
+              height={54}
+              alt="partner"
+            />
+            <Image
+              src="/homepage/partner-2.svg"
+              width={303.76}
+              height={54}
+              alt="partner"
+            />
+            <Image
+              src="/homepage/partner-3.svg"
+              width={71.52}
+              height={54}
+              alt="partner"
+            />
+            <Image
+              src="/homepage/partner-4.svg"
+              width={218}
+              height={54}
+              alt="partner"
+            />
           </div>
         </div>
       </div>
