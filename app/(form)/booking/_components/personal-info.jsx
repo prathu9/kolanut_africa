@@ -4,13 +4,14 @@ import Image from "next/image";
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({setShowEmailVerification, setShowWizard}) => {
   const { currentStep, nextStep } = useContext(WizardContext);
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
-    nextStep();
+    setShowEmailVerification(true);
+    setShowWizard(false);
   };
 
   if (currentStep !== 3) {
@@ -83,7 +84,7 @@ const PersonalInfo = () => {
               <input
                 className="w-full h-12 pl-6 pr-16 border border-[#C5C4C4] rounded-xl"
                 type="text"
-                {...register("property-value")}
+                {...register("date-of-birth")}
               />
               <span className="absolute top-1/2 right-6 -translate-y-1/2 text-base">
                 <Image src="/form/calendar.svg" width={24} height={24} alt="calendar"/>
@@ -95,8 +96,8 @@ const PersonalInfo = () => {
             <div className="mt-2 mb-4 relative">
               <input
                 className="w-full h-12 pl-6 pr-16 border border-[#C5C4C4] rounded-xl"
-                type="text"
-                {...register("property-value")}
+                type="pasword"
+                {...register("password")}
               />
               <span className="absolute top-1/2 right-6 -translate-y-1/2 text-base">
                 <Image src="/form/eye-slash.svg" width={24} height={24} alt="calendar"/>
