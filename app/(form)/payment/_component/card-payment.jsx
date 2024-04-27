@@ -4,8 +4,13 @@ import { useForm } from "react-hook-form";
 const CardPayment = () => {
   const {
     register,
+    handleSubmit,
     formState: { isValid },
   } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  }
 
   return (
     <div className="mt-[77.25px] mx-[150px]">
@@ -23,7 +28,7 @@ const CardPayment = () => {
           />
           <Image src="/insurance/visa.svg" width={24} height={24} alt="visa" />
         </h3>
-        <form className="flex flex-col">
+        <form method="post" onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
           <label className="mb-2 text-base leading-[23.2px] font-medium text-custom-grey">
             Name on card
           </label>
@@ -68,7 +73,7 @@ const CardPayment = () => {
               />
               <label
                 htmlFor="save-later"
-                className="w-11 h-11 rounded-lg peer-checked:bg-[#FC9CA0] border border-[#C5C4C4] select-none cursor-pointer"
+                className="w-11 h-11 relative z-10 opacity-60 rounded-lg peer-checked:bg-[#FC9CA0] border border-[#C5C4C4] select-none cursor-pointer"
               ></label>
               <span className="absolute invisible peer-checked:visible">
                 <svg
@@ -97,7 +102,7 @@ const CardPayment = () => {
             type="submit"
             value="Pay now"
             disabled={!isValid}
-            className={`mt-10 mx-auto px-6 py-3 max-w-[119px] rounded-xl  ${
+            className={`mt-10 mx-auto px-6 py-3 max-w-[119px] rounded-xl cursor-pointer  ${
               isValid ? "bg-custom-red text-white" : "bg-[#E0E0E0]"
             }`}
           />

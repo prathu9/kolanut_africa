@@ -9,7 +9,7 @@ const PaymentPage = () => {
   const [coupon, setCoupon] = useState("");
   const [showDiscountBanner, setShowDiscountBanner] = useState(true);
   const [showCardPayment, setShowCardPayment] = useState(false);
-  const [showOTPForm, setShowOTPForm] = useState(true);
+  const [showOTPForm, setShowOTPForm] = useState(false);
 
   const hideDiscountBanner = () => {
     setShowDiscountBanner(false);
