@@ -16,6 +16,15 @@ module.exports = {
         "custom-red": "#AF060D",
         "custom-grey": "#2E3342"
       },
+      keyframes: {
+        fadeIn: {
+          '0%': {opacity: 0},
+          '100%': {opacity: 1}
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 150ms 2s ease-in forwards'
+      }
     },
   },
   plugins: [],

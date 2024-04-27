@@ -1,7 +1,9 @@
+"use client";
 import FilterAccordion from "./_components/filter-accordion";
 import Image from "next/image";
 import CustomCheckBox from "./_components/custom-checkbox";
 import InsuranceOption from "./_components/insurance-option";
+import { useRouter } from "next/navigation";
 
 const insuranceDurationOptions = [
     {
@@ -32,6 +34,13 @@ const insuranceDurationOptions = [
 ]
 
 const InsuranceOptions = () => {
+
+  const router = useRouter();
+
+  const handleSelect = () => {
+    router.push("/payment");
+  }
+
   return (
     <div className="p-20">
       <div className="flex min-h-[1348px] bg-[#FAFAFA]">
@@ -92,8 +101,8 @@ const InsuranceOptions = () => {
                 </div>
             </div>
             <div className="mt-10">
-              <InsuranceOption />
-              <InsuranceOption />
+              <InsuranceOption handleSelect={handleSelect} />
+              <InsuranceOption handleSelect={handleSelect}/>
             </div>
         </div>
       </div>

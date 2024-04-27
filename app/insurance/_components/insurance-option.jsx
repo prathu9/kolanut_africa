@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const InsuranceOption = () => {
+const InsuranceOption = ({handleSelect}) => {
   return (
     <div className="mb-6 px-6 py-4 flex gap-[97px] justify-between rounded-3xl bg-white">
       <div className="flex gap-4 basis-[62.53%] items-center">
@@ -27,7 +27,7 @@ const InsuranceOption = () => {
         <span className="text-lg leading-[26.1px] text-custom-grey font-medium">
           ₦540,000
         </span>
-        <button className="flex gap-2 justify-between px-4 py-2 rounded-xl border-2 border-custom-red">
+        <button onClick={handleSelect} className="flex gap-2 justify-between px-4 py-2 rounded-xl border-2 border-custom-red">
           <span className="text-lg leading-[26.1px] font-normal text-custom-red">
             Select
           </span>

@@ -1,6 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-
-const { default: Image } = require("next/image");
 
 const EmailVerifiedPage = () => {
   return (
@@ -22,7 +21,7 @@ const EmailVerifiedPage = () => {
           to continue in 30 seconds, click on the “Continue” button to continue
           to sign up
         </p>
-        <Link href="/insurance-options" className="w-[127px] h-[50px] mt-12 mx-auto px-6 py-3 bg-custom-red text-white rounded-xl cursor-pointer">
+        <Link href="/insurance" className="w-[127px] h-[50px] mt-12 mx-auto px-6 py-3 bg-custom-red text-white rounded-xl cursor-pointer">
           Continue
         </Link>
       </div>
