@@ -17,7 +17,7 @@ const BookingPage = () => {
   const [showEmailVerification, setShowEmailVerification] = useState();
 
   return (
-    <div className="relative z-10 w-fit h-fi=">
+    <div className="relative z-10 w-fit h-fit">
       {showWizard ? (
         <WizardForm steps={4}>
           {accommodationType === "own" ? (
