@@ -1,4 +1,6 @@
 import BellIcon from "@/icons/bell-icon";
+import SearchIcon from "@/icons/search-icon";
+import SettingsTab from "./_components/settings-tab";
 
 const SettingsPage = () => {
     return(
@@ -7,20 +9,7 @@ const SettingsPage = () => {
           <h2 className="text-[14px] leading-[20.3px] font-normal">Settings</h2>
           <div className="relative basis-[26.78%] min-w-[312px] h-[44px] bg-[#FBF9F9]">
             <div className="absolute top-[10px] left-4">
-              <svg
-                className="w-[21px] h-[21px]"
-                viewBox="0 0 21 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.5 19L13.5001 13M15.5 8C15.5 11.866 12.366 15 8.5 15C4.63401 15 1.5 11.866 1.5 8C1.5 4.13401 4.63401 1 8.5 1C12.366 1 15.5 4.13401 15.5 8Z"
-                  stroke="#777575"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+             <SearchIcon />
             </div>
             <input
               type="text"
@@ -38,8 +27,8 @@ const SettingsPage = () => {
           </div>
         </header>
         <div className="px-10 py-10">
-            <h2 className="mb-[17px]">Settings</h2>
-          
+            <h2 className="mb-6 text-[28px] font-semibold leading-[40.6px] text-custom-grey">Settings</h2>
+            <SettingsTab />
         </div>
         </div>
     )

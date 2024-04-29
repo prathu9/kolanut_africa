@@ -31,20 +31,20 @@ const SideNav = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/dashboard/transactions" className={`px-4 py-2 flex gap-3 items-center text-base font-medium leading-[23.2px] ${linkStyle(pathname === "/dashboard/transactions")}`}>
-                        <TransactionsIcon isActive={linkStyle(pathname === "/dashboard/transactions")} />
+                    <Link href="/dashboard/transactions" className={`px-4 whitespace-nowrap py-2 flex gap-3 items-center text-base font-medium leading-[23.2px] ${linkStyle(pathname === "/dashboard/transactions")}`}>
+                        <TransactionsIcon isActive={pathname === "/dashboard/transactions"} />
                         <span>Transaction History</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/dashboard/claims" className={`px-4 py-2 flex gap-3 items-center text-base font-medium leading-[23.2px] ${linkStyle(pathname === "/dashboard/claims")}`}>
-                        <ClaimsIcon isActive={linkStyle(pathname === "/dashboard/claims")}/>
+                        <ClaimsIcon isActive={pathname === "/dashboard/claims"}/>
                         <span>Claims</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="/dashboard/settings" className={`px-4 py-2 flex gap-3 items-center text-base font-medium leading-[23.2px] ${linkStyle(pathname === "/dashboard/settings")}`}>
-                        <SettingsIcon isActive={linkStyle(pathname === "/dashboard/settings")}/>
+                        <SettingsIcon isActive={pathname === "/dashboard/settings"}/>
                         <span>Settings</span>
                     </Link>
                 </li>
