@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 
-const CardPayment = () => {
+const CardPayment = ({setShowOTPForm}) => {
   const {
     register,
     handleSubmit,
@@ -10,6 +10,7 @@ const CardPayment = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    setShowOTPForm(true);
   }
 
   return (

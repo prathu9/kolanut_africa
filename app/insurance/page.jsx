@@ -2,8 +2,9 @@
 import FilterAccordion from "./_components/filter-accordion";
 import Image from "next/image";
 import CustomCheckBox from "./_components/custom-checkbox";
-import InsuranceOption from "./_components/insurance-option";
+
 import { useRouter } from "next/navigation";
+import InsuranceOption from "@/components/insurance-option/insurance-option";
 
 const insuranceDurationOptions = [
     {
@@ -42,7 +43,7 @@ const InsuranceOptions = () => {
   }
 
   return (
-    <div className="p-20">
+    <div>
       <div className="flex min-h-[1348px] bg-[#FAFAFA]">
         <div className="pt-[181px] pl-10 pr-[99px] border-r-2">
           <h3 className="mb-8 flex gap-3">
@@ -101,8 +102,8 @@ const InsuranceOptions = () => {
                 </div>
             </div>
             <div className="mt-10">
-              <InsuranceOption handleSelect={handleSelect} />
-              <InsuranceOption handleSelect={handleSelect}/>
+              <InsuranceOption handleSelect={handleSelect} optionStyle="bg-white" />
+              <InsuranceOption handleSelect={handleSelect} optionStyle="bg-white"/>
             </div>
         </div>
       </div>

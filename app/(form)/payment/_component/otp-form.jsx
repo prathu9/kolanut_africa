@@ -9,7 +9,7 @@ const OTPForm = () => {
     handleSubmit,
     formState: { isValid },
   } = useForm();
-  const [showSuccessMessage, setShowSuccessMessage] = useState(true);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -57,8 +57,8 @@ const OTPForm = () => {
             </div>
             <input
               disabled={!isValid}
-              className={`mt-12 mx-auto px-6 py-3 block rounded-xl leading-[26.1px] ${
-                isValid ? "bg-custom-red" : "bg-[#EFEFEF] text-[#777575]"
+              className={`mt-12 mx-auto px-6 py-3 block rounded-xl leading-[26.1px] cursor-pointer ${
+                isValid ? "bg-custom-red text-white" : "bg-[#EFEFEF] text-[#777575]"
               }`}
               type="submit"
               value="Confirm payment"

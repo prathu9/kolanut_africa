@@ -139,7 +139,7 @@ const PaymentPage = () => {
           </span>
         </div>
         {showCardPayment ? (
-          <CardPayment />
+          <CardPayment setShowOTPForm={setShowOTPForm} />
         ) : (
           <div className="mt-10 mb-[47px]">
             <h2 className="mb-8 text-2xl leading-[34.8px] font-medium text-custom-grey text-center">
