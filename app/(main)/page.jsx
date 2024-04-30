@@ -44,82 +44,89 @@ const faq = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[1440px]">
-      <div className="mb-[192px] px-20 flex gap-8">
-        <div className="w-[608px] mt-[116px] font-semibold text-custom-grey">
-          <h1 className="text-5xl">
+    <main className="mx-auto max-w-[1920px]">
+      <div className="mb-[120px] px-4 flex flex-wrap md:gap-8 md:px-20 md:flex-nowrap md:mb-[192px]">
+        <div className="w-full mt-[88.17px] font-semibold text-custom-grey lg:w-[608px] text-center md:mt-[116px] md:text-left">
+          <h1 className="text-3xl leading-[36px] md:text-5xl md:leading-[57.6px]">
             Home insurance policy tailored for everyone
           </h1>
-          <p className="text-lg leading-[26.1px] mt-6 mb-12 font-[400]">
-            Whether you prefer to buy online or want expert guidance,
-            <br /> Kolanut makes it easy to find your perfect home policy. The
-            <br /> Cheapest home Insurance Deals at your Fingertips
+          <p className="text-base leading-[23.2px] mt-6 mb-12 font-[400] lg:text-lg lg:leading-[26.1px]">
+            Whether you prefer to buy online or want expert guidance, Kolanut
+            makes it easy to find your perfect home policy. The Cheapest home
+            Insurance Deals at your Fingertips
           </p>
           <button className="bg-custom-red text-slate-100 text-lg leading-[26.1px] rounded-xl px-6 py-3">
             Get Instant Quote
           </button>
-          <p
-            className="mt-[76px] max-w-[499px] px-4 py-2 text-lg leading-[26.1px] font-normal text-custom-red bg-[#FEF0F1]"
-          >
+          <p className="mt-8 max-w-[499px] px-4 py-2 text-base leading-[26.1px] font-normal text-custom-red bg-[#FEF0F1] md:text-lg md:mt-[76px]">
             Save up to N100,000 by comparing quotes from the top 10+ insurance
             Companies
           </p>
         </div>
-        <div className="mt-[109.6px] rounded-3xl overflow-hidden">
+        <div className="mt-[44px] mx-6 rounded-3xl overflow-hidden md:mt-[109.6px]">
           <Image
             src="/homepage/cover-1.png"
             width={632}
             height={491}
             alt="cover"
+            className="rounded-3xl"
           />
         </div>
       </div>
-      <div className="relative h-[359px] flex justify-center items-center">
+      <div className="relative max-w-[1920px] h-[359px] flex justify-center items-center overflow-hidden">
         <Image
-          className="max-w-[1440px]"
-          sizes="100vw"
-          fill
+          className="absolute overflow-visible left-[-82%] w-[1670px] h-[359px] object-cover sm:left-[0%]"
+          width={0}
+          height={0}
           src="/homepage/wave-vector.svg"
           alt="wave"
         />
         <div className="relative z-10">
-          <h2 className="mb-[54px] text-[#FAFBFF] text-center text-2xl leading-[30.24px] font-semibold">
+          <h2 className="mb-[54px] text-[#FAFBFF] text-center text-base font-semibold leading-[20.16px] sm:leading-[30.24px] sm:text-2xl">
             We partner with Top Insurance companies
           </h2>
-          <div className="flex gap-[176.59px]">
-            <Image
-              src="/homepage/partner-1.svg"
-              width={158.94}
-              height={54}
-              alt="partner"
-            />
-            <Image
-              src="/homepage/partner-2.svg"
-              width={303.76}
-              height={54}
-              alt="partner"
-            />
-            <Image
-              src="/homepage/partner-3.svg"
-              width={71.52}
-              height={54}
-              alt="partner"
-            />
-            <Image
-              src="/homepage/partner-4.svg"
-              width={218}
-              height={54}
-              alt="partner"
-            />
+          <div className="flex gap-10 justify-center flex-wrap 2xl:gap-[176.59px]">
+            <div className="relative w-[97.67px] h-[33.18px] md:w-[158.94px] md:h-[54px]">
+              <Image
+                src="/homepage/partner-1.svg"
+                sizes="100vw"
+                fill
+                alt="partner"
+              />
+            </div>
+            <div className="relative w-[186.66px] h-[33.18px] md:w-[303.76px] md:h-[54px]">
+              <Image
+                src="/homepage/partner-2.svg"
+                sizes="100vw"
+                fill
+                alt="partner"
+              />
+            </div>
+            <div className="relative w-[43.95px] h-[33.18px] md:w-[71.52px] md:h-[54px]">
+              <Image
+                src="/homepage/partner-3.svg"
+                sizes="100vw"
+                fill
+                alt="partner"
+              />
+            </div>
+            <div className="relative w-[133.96px] h-[33.18px] md:w-[218px] md:h-[54px]">
+              <Image
+                src="/homepage/partner-4.svg"
+                wsizes="100vw"
+                fill
+                alt="partner"
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div className="pt-[300px] pb-[120px] px-24">
-        <h2 className="mb-[74px] text-[40px] leading-[50px] font-bold text-center text-[#5B5B5B]">
+      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[300px]">
+        <h2 className="mb-[33px] text-2xl leading-[50px] font-bold text-[#5B5B5B] md:mb-[74px] md:text-center md:text-[40px]">
           Why choose us?
         </h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-16">
-          <div className="relative px-6 pt-[62px] basis-[48%] rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
+          <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
             <div className="absolute -top-8 bg-white px-[8.75px] py-[8.5px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/streamline-plump.svg"
@@ -128,15 +135,15 @@ export default function Home() {
                 alt="icon"
               />
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
+            <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Transparent & Trustworthy
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
               We provide clear, unbiased information to help you make an
               informed decision without any hidden fees or charges
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] basis-[48%]  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
+          <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
             <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/support.svg"
@@ -145,15 +152,15 @@ export default function Home() {
                 alt="icon"
               />
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
+              Comprehensive Coverage Options
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+              From fire and theft to natural disasters, find coverage that
+              protects what matters most to you.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] basis-[48%]  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
+          <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
             <div className="absolute -top-8 bg-white px-[15px] py-[7px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/coverage.svg"
@@ -162,15 +169,15 @@ export default function Home() {
                 alt="icon"
               />
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
+              24/7 Support
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+              Our dedicated team is here to assist you at every step of your
+              insurance journey.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] basis-[48%] rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE]">
+          <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
             <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
               <Image
                 src="/homepage/innovation.svg"
@@ -179,18 +186,19 @@ export default function Home() {
                 alt="icon"
               />
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
+              Innovation
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+              We embrace innovation as a driving force behind our quest to
+              revolutionize the home insurance industry. we continually seek new
+              ways to improve the insurance experience for our customers.
             </p>
           </div>
         </div>
       </div>
-      <div className="mt-[150px] relative">
-        <h2 className="text-custom-grey text-[40px] font-semibold leading-[50.4px] text-center">
+      <div className="mt-[44px] mx-5 relative md:mt-[150px] md:mx-0">
+        <h2 className="text-custom-grey text-2xl font-semibold leading-[50.4px] text-center md:text[40px]">
           3 Steps to safeguarding your Home
         </h2>
         <h5 className="max-w-[933px] mx-auto mt-4 text-base text-[#6C6C6C] font-normal leading-[23.2px] text-center">
@@ -198,40 +206,61 @@ export default function Home() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam,{" "}
         </h5>
-        <div className="mt-[77px] mb-[84px] h-[536px] relative rounded-[32px] overflow-hidden">
+        <div className="mt-[77px] mb-[32px] w-full h-[178px] aspect-ratio relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
           <Image
-            className="right-0"
+            className="ml-auto right-0 object-contain hidden sm:block"
             src="/homepage/bg-1.svg"
             alt="bg"
-            style={{ objectFit: "cover" }}
-            fill
+            width={1280}
+            height={536}
+          />
+          <Image
+            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[178px]"
+            src="/homepage/bg-mobile-1.svg"
+            alt="bg"
+            width={353}
+            height={178}
           />
         </div>
-        <div className="mt-[77px] mb-[84px] h-[657px] relative rounded-[32px] overflow-hidden">
+        <div className="mb-[32px] h-[181.19px] relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
           <Image
-            className="right-0"
+            className="ml-auto right-0 object-contain hidden sm:block"
             src="/homepage/bg-2.svg"
             alt="bg"
-            style={{ objectFit: "cover" }}
-            fill
+            width={1280}
+            height={657}
+          />
+          <Image
+            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[181.19px]"
+            src="/homepage/bg-mobile-2.svg"
+            alt="bg"
+            width={353}
+            height={181.19}
           />
         </div>
-        <div className="mt-[77px] mb-[84px] h-[488px] relative rounded-[32px] overflow-hidden">
+        <div className="mb-[32px] h-[134.58px] relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
           <Image
-            className="right-0"
+            className="ml-auto right-0 object-contain hidden sm:block"
             src="/homepage/bg-3.svg"
             alt="bg"
-            style={{ objectFit: "cover" }}
-            fill
+            width={1280}
+            height={657}
+          />
+          <Image
+            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[181.19px]"
+            src="/homepage/bg-mobile-3.svg"
+            alt="bg"
+            width={353}
+            height={134.58}
           />
         </div>
       </div>
-      <div className="mx-20 mt-[300px] mb-[200px] w-[1279.63px] h-[628px] flex justify-between">
-        <div className="basis-2/4 max-w-[581px]">
-          <h2 className="mb-[24px] text-[40px] font-semibold leading-[50.4px]">
+      <div className="px-5 mt-[88.23px] mb-[88px] flex justify-between items-center gap-5 flex-wrap-reverse lg:mx-20 lg:mb-[200px] lg:mt-[300px] md:items-start">
+        <div className="basis-full max-w-[581px] md:basis-2/5">
+          <h2 className="mb-[24px] text-3xl font-semibold leading-[30.24px] md:leading-[50.4px] md:text-[40px]">
             On the spot assistance from expert advisors
           </h2>
-          <p className="text-lg font-normal leading-[26.1px]">
+          <p className="text-sm font-normal leading-[21px] md:leading-[26.1px] md:text-lg">
             Support doesn’t end after you find your best rate. We’re here to
             help whenever you need advice, from navigating claims to adjusting
             coverage after big life events.
@@ -273,7 +302,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <figure className="basis-2/4 max-w-[635.63px] relative">
+        <figure className="basis-full max-w-[635.63px] relative md:basis-[49%]">
           <div className="max-w-[635px] h-[628px] rounded-t-[35.6px] relative overflow-hidden">
             <Image
               className="absolute top-[17px] right-[41.93px] z-10"
@@ -295,15 +324,15 @@ export default function Home() {
           </div>
         </figure>
       </div>
-      <div className="pt-[100px]">
-        <h2 className="max-w-[800px] mx-auto text-custom-grey font-semibold text-[40px] leading-[50.4px] text-center">
+      <div className="pt-[49px] px-5 md:pt-[100px]">
+        <h2 className="max-w-[800px] mx-auto mb-2 text-custom-grey font-semibold text-2xl leading-[30.24px] text-left md:text-[40px] md:leading-[50.4px] md:text-center">
           Protect your most Treasured Space Against Risk
         </h2>
-        <p className="max-w-[656px] mx-auto text-center text-[#535763] font-normal text-lg leading-[26.1px]">
+        <p className="max-w-[656px] mx-auto text-left text-[#535763] font-normal text-sm leading-[20.3px] md:-text-center md:text-lg md:leading-[26.1px]">
           Our new suite of Home  insurance products to help you protect your
           home, furniture, and beautiful family memories.
         </p>
-        <div className="flex mt-[118px] mb-[163px] ml-[80px]">
+        <div className="flex mt-9 mb-[163px] pb-[51px] lg:ml-[80px] md:pb-[151px] md:ml-[40px] md:mt-[118px]">
           <div>
             <div className="max-w-[522px] mb-16">
               <h3 className="mb-2 text-custom-red text-2xl font-semibold leading-[28.8px]">
@@ -336,7 +365,7 @@ export default function Home() {
                 complexities
               </p>
             </div>
-            <div className="max-w-[522px] mb-16">
+            <div className="max-w-[522px] md:mb-16">
               <h3 className="mb-2 text-custom-grey text-2xl font-semibold leading-[28.8px]">
                 Corporate Propertiess
               </h3>
@@ -346,11 +375,11 @@ export default function Home() {
                 in delivering secure and reliable homes to their client
               </p>
             </div>
-            <button className="mt-10 px-6 py-3 border-2 border-custom-red text-custom-red rounded-xl">
+            <button className="mt-8 px-6 py-3 border-2 border-custom-red text-custom-red rounded-xl md:mt-10">
               Learn more
             </button>
           </div>
-          <div className="max-w-[808px] basis-2/3 relative">
+          <div className="max-w-[808px] basis-2/3 relative hidden md:block">
             <Image
               className="absolute right-0"
               src="/homepage/property-1.png"
@@ -361,12 +390,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[300px] pt-20 mx-20 mb-20">
-        <h2 className="mb-14 text-[40px] leading-[50.4px] text-center font-semibold">
+      <div className="mt-[88px] mx-5 mb-[88px] md:pt-20 md:mt-[300px] md:mx-20 md:mb-20">
+        <h2 className="mb-14 text-[40px] leading-[50.4px] font-semibold md:text-center">
           What our customers are saying about us
         </h2>
         <div>
-          <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px]">
+          <div className="px-5 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
             <p className="font-normal text-base leading-[23.2px] text-[#535763]">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -381,42 +410,81 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mb-[300px] mx-20 flex gap-[125px]">
-        <div className="max-w-[575px]">
-          <h2 className="mb-2 text-custom-grey text-5xl leading-[69.6px] font-semibold">
+      <div className="mb-[300px] mx-5 flex gap-8 flex-wrap lg:gap-[125px] lg:mx-20">
+        <div className="basis-full md:max-w-[575px] md:basis-[42%]">
+          <h2 className="mb-2 text-custom-grey text-2xl leading-[34.8px] font-semibold md:text-5xl md:leading-[69.6px]">
             The Kolanut shield{" "}
             <span className="text-custom-red">of Honour</span>
           </h2>
-          <p className="text-base font-normal leading-[20.16px] text-[#535763]">
+          <p className="text-sm font-normal leading-[21px] text-[#535763] md:text-base md:leading-[20.16px]">
             Explore our comprehensive list of real estate partners offering
             complete coverage on housing options
           </p>
         </div>
-        <div className="flex flex-wrap gap-x-20 gap-y-6 max-w-[537px]">
-          <Image
-            src="/homepage/partner-1.png"
-            width={220.75}
-            height={75}
-            alt="partner"
-          />
-          <Image
-            src="/homepage/partner-2.png"
-            width={99.33}
-            height={75}
-            alt="partner"
-          />
-          <Image
-            src="/homepage/partner-3.png"
-            width={75}
-            height={75}
-            alt="partner"
-          />
-          <Image
+        <div className="flex flex-wrap gap-x-20 gap-y-6 basis-full md:max-w-[537px] md:basis-[42%]">
+          <div>
+            <Image
+             className="hidden md:block"
+              src="/homepage/partner-1.png"
+              width={220.75}
+              height={75}
+              alt="partner"
+            />
+            <Image
+            className="block md:hidden"
+              src="/homepage/partner-1.png"
+              width={143.36}
+              height={48.71}
+              alt="partner"
+            />
+          </div>
+          <div>
+            <Image
+             className="hidden md:block"
+              src="/homepage/partner-2.png"
+              width={99.33}
+              height={75}
+              alt="partner"
+            />
+             <Image
+             className="block md:hidden"
+              src="/homepage/partner-2.png"
+              width={64.51}
+              height={48.71}
+              alt="partner"
+            />
+          </div>
+          <div>
+            <Image
+             className="hidden md:block"
+              src="/homepage/partner-3.png"
+              width={75}
+              height={75}
+              alt="partner"
+            />
+            <Image
+            className="block md:hidden"
+              src="/homepage/partner-3.png"
+              width={48.71}
+              height={48.71}
+              alt="partner"
+            />
+          </div>
+          <div>
+            <Image
+            className="hidden md:block"
+              src="/homepage/partner-4.png"
+              width={302.78}
+              height={75}
+              alt="partner"
+            /><Image
+            className="block md:hidden"
             src="/homepage/partner-4.png"
-            width={302.78}
-            height={75}
+            width={196.63}
+            height={48.71}
             alt="partner"
           />
+          </div>
         </div>
       </div>
       <div className="mt-[300px] pt-[120px] pb-[118px] px-24">

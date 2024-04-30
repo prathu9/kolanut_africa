@@ -1,4 +1,5 @@
 import DocumentUploadIcon from "@/icons/document-upload";
+import Link from "next/link";
 
 const DocumentUploadStatus = () => {
     return(
@@ -12,9 +13,9 @@ const DocumentUploadStatus = () => {
                 <div className="mb-8">
 
                 </div>
-                <button className="mb-4 px-6 py-2 rounded-xl text-white text-lg leading-[26.1px] font-normal bg-custom-red">
+                <Link href="/kyc" className="flex max-w-[204px] mb-4 px-6 py-2 rounded-xl text-white text-lg leading-[26.1px] font-normal bg-custom-red">
                     Upload document
-                </button>
+                </Link>
                 <p className="text-[#E3E2E2] font-normal text-[12px] leading-[17.4px]">ID verification( NIN) , CAC, CO2,CO7, pictures of the property</p>
             </div>
         </div>

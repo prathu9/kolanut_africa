@@ -3,7 +3,7 @@ import { WizardContext } from "@/components/wizard-form/wizard-form";
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 
-const PropertyDocument = () => {
+const PropertyDocument = ({onSuccess}) => {
   const { currentStep } = useContext(WizardContext);
   const {register, handleSubmit, formState: {isValid}} = useForm();
 
@@ -13,6 +13,7 @@ const PropertyDocument = () => {
 console.log(isValid)
   const onSubmit = (data) => {
     console.log(data);
+    onSuccess();
   }
 
   return (

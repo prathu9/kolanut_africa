@@ -7,7 +7,7 @@ import { useState } from "react";
 import UploadSuccess from "./_components/upload-success";
 
 const KycPage = () => {
-  const [showUploadSucces, setShowUploadSuccess] = useState(true);
+  const [showUploadSucces, setShowUploadSuccess] = useState(false);
 
   const onSuccess = () => {
     setShowUploadSuccess(true);
