@@ -593,7 +593,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-5 my-[88px] pb-20 pt-[54px] lg:mx-[258px] md:mt-[238px] md:mb-[300px] md:pt-[54px] md:mx-20">
+      <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[238px] md:mb-[300px] md:mx-20 md:pt-[54px] md:pb-20">
         <h2 className="mb-2 text-custom-grey text-2xl leading-[30.24px] font-semibold md:leading-[50.4px] md:text-[40px] md:text-center">
           Frequently asked questions
         </h2>
