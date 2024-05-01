@@ -410,7 +410,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mb-[300px] mx-5 flex gap-8 flex-wrap lg:gap-[125px] lg:mx-20">
+      <div className="mx-5 flex gap-8 flex-wrap lg:gap-[125px] lg:mx-20">
         <div className="basis-full md:max-w-[575px] md:basis-[42%]">
           <h2 className="mb-2 text-custom-grey text-2xl leading-[34.8px] font-semibold md:text-5xl md:leading-[69.6px]">
             The Kolanut shield{" "}
@@ -487,12 +487,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[300px] pt-[120px] pb-[118px] px-24">
-        <div className="mb-20 flex justify-between">
-          <h2 className="text-[40px] leading-[50.4px] font-bold text-[#444444]">
+      <div className="mt-[98.59px] mx-5 xl:px-24 md:mx-20 md:pt-[120px] md:mt-[300px] md:pb-[118px]">
+        <div className="mb-9 flex justify-between md:mb-20">
+          <h2 className="text-2xl leading-[30.24px] font-bold text-[#444444]md:text-[40px] md:leading-[50.4px]">
             News and updates
           </h2>
-          <span className="flex gap-3.5 text-[21px] leading-[26.46px] text-[#444444] font-semibold">
+          <span className="hidden gap-3.5 text-[21px] leading-[26.46px] text-[#444444] font-semibold md:flex">
             View All
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -521,17 +521,17 @@ export default function Home() {
             </svg>
           </span>
         </div>
-        <div className="flex gap-6">
-          <div className="max-w-[400px]">
-            <div className="relative w-full h-[254px] rounded-[20px]">
+        <div className="flex gap-12 flex-wrap justify-center md:justify-start md:flex-nowrap md:gap-6">
+          <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
+            <div className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-1.png" sizes="100%" fill alt="blog" />
             </div>
             <h3
-              className={`${inter.className} mt-4 mb-8 font-semibold text-2xl leading-[29.05px] text-[#444444]`}
+              className={`${inter.className} mt-4 mb-2 font-semibold text-base leading-[19.36px] text-[#444444] md:text-2xl md:leading-[29.05px] md:mb-8`}
             >
               Tips for lowering your home Insurance premiums
             </h3>
-            <span className="flex gap-2 items-center">
+            <span className="flex gap-2 items-center text-sm font-normal leading-[17.64px]">
               4mins read{" "}
               <svg
                 width="5"
@@ -545,16 +545,16 @@ export default function Home() {
               3/19/2024
             </span>
           </div>
-          <div className="max-w-[400px]">
-            <div className="relative w-full h-[254px] rounded-[20px]">
+          <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
+            <div  className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-2.png" sizes="100%" fill alt="blog" />
             </div>
             <h3
-              className={`${inter.className} mt-4 mb-8 font-semibold text-2xl leading-[29.05px] text-[#444444]`}
+              className={`${inter.className} mt-4 mb-2 font-semibold text-base leading-[19.36px] text-[#444444] md:text-2xl md:leading-[29.05px] md:mb-8`}
             >
               The Benefits of Bundling Insurance Policies
             </h3>
-            <span className="flex gap-2 items-center">
+            <span className="flex gap-2 items-center text-sm font-normal leading-[17.64px]">
               4mins read{" "}
               <svg
                 width="5"
@@ -568,16 +568,16 @@ export default function Home() {
               3/19/2024
             </span>
           </div>
-          <div className="max-w-[400px]">
-            <div className="relative w-full h-[254px] rounded-[20px]">
+          <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
+            <div  className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-3.png" sizes="100%" fill alt="blog" />
             </div>
             <h3
-              className={`${inter.className} mt-4 mb-8 font-semibold text-2xl leading-[29.05px] text-[#444444]`}
+              className={`${inter.className} mt-4 mb-2 font-semibold text-base leading-[19.36px] text-[#444444] md:text-2xl md:leading-[29.05px] md:mb-8`}
             >
               Preparing your home for the Rainy season
             </h3>
-            <span className="flex gap-2 items-center">
+            <span className="flex gap-2 items-center text-sm font-normal leading-[17.64px]">
               4mins read{" "}
               <svg
                 width="5"
@@ -593,11 +593,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[238px] mx-[258px] mb-[300px] pb-20 pt-[54px]">
-        <h2 className="mb-2 text-center text-custom-grey font-semibold leading-[50.4px] text-[40px]">
+      <div className="mx-5 my-[88px] pb-20 pt-[54px] lg:mx-[258px] md:mt-[238px] md:mb-[300px] md:pt-[54px] md:mx-20">
+        <h2 className="mb-2 text-custom-grey text-2xl leading-[30.24px] font-semibold md:leading-[50.4px] md:text-[40px] md:text-center">
           Frequently asked questions
         </h2>
-        <p className="m-auto mb-10 max-w-[656px] text-lg leading-[26.1px] text-center font-normal text-[#535763]">
+        <p className="mb-10 max-w-[656px] text-base leading-[21px] font-normal text-[#535763] md:text-lg md:leading-[26.1px] md:text-center md:m-auto">
           You have questions?we have answers to all your questions and if you
           can’t find an answer to your question here, contact us.
         </p>

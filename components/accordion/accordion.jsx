@@ -12,11 +12,11 @@ const Accordion = ({accordionItems}) => {
     return(
         <div>
            {accordionItems.map(({title, description}, index) => (
-            <div className="mt-6 mb-6 px-10 border-b-2 border-[#F0F0F0]" key={title}>
-                <button className="w-full mb-[22px] pt-[22px] flex justify-between font-semibold text-[28px] leading-[40.6px] text-custom-grey" onClick={() => toggleActiveIndex(index)}>
+            <div className="mt-6 mb-6 border-b-2 border-[#F0F0F0] md:px-10" key={title}>
+                <button onClick={() => toggleActiveIndex(index)} className="w-full mb-[22px] pt-[22px] flex gap-5 justify-between font-semibold text-base text-left leading-[20.3px] text-custom-grey md:text-[28px] md:leading-[40.6px]" >
                     <span>{title}</span>
                 <svg
-              className={`h-6 w-6 transition-transform duration-300 transform ${
+              className={`h-[9.53px] w-[9.53px] transition-transform duration-300 transform md:w-6 md:h-6 ${
                 activeIndex === index ? "rotate-180" : ""
               }`}
               fill="none"
