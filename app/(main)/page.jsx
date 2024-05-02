@@ -87,7 +87,7 @@ export default function Home() {
           <h2 className="mb-[54px] text-[#FAFBFF] text-center text-base font-semibold leading-[20.16px] sm:leading-[30.24px] sm:text-2xl">
             We partner with Top Insurance companies
           </h2>
-          <div className="flex gap-10 justify-center flex-wrap 2xl:gap-[176.59px]">
+          <div className="flex gap-10 justify-center flex-wrap lg:justify-between lg:gap-[100px] 2xl:gap-[176.59px]">
             <div className="relative w-[97.67px] h-[33.18px] md:w-[158.94px] md:h-[54px]">
               <Image
                 src="/homepage/partner-1.svg"
