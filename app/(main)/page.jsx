@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Accordion from "@/components/accordion/accordion";
+import CoverSwiper from "./_component/cover-swiper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,6 +74,7 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* <CoverSwiper /> */}
       <div className="relative max-w-[1920px] h-[359px] flex justify-center items-center overflow-hidden">
         <Image
           className="absolute overflow-visible left-[-82%] w-[1670px] h-[359px] object-cover sm:left-[0%]"
