@@ -46,7 +46,7 @@ const faq = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-[1920px]">
-      <div className="mb-[120px] px-4 flex flex-wrap md:gap-8 md:px-20 md:flex-nowrap md:mb-[192px]">
+      <div className="mb-[120px] px-4 flex flex-wrap md:gap-8 md:px-20 md:flex-nowrap md:mb-[160px]">
         <div className="w-full mt-[88.17px] font-semibold text-custom-grey lg:w-[608px] text-center md:mt-[116px] md:text-left">
           <h1 className="text-3xl leading-[36px] md:text-5xl md:leading-[57.6px]">
             Home insurance policy tailored for everyone
@@ -59,7 +59,7 @@ export default function Home() {
           <button className="bg-custom-red text-slate-100 text-lg leading-[26.1px] rounded-xl px-6 py-3">
             Get Instant Quote
           </button>
-          <p className="mt-8 max-w-[499px] px-4 py-2 text-base leading-[26.1px] font-normal text-custom-red bg-[#FEF0F1] md:text-lg md:mt-[76px]">
+          <p className="mt-8 max-w-[499px] px-4 py-2 text-base leading-[26.1px] font-normal text-custom-red bg-[#FEF0F1] rounded-xl md:text-lg md:mt-[76px]">
             Save up to N100,000 by comparing quotes from the top 10+ insurance
             Companies
           </p>
@@ -123,19 +123,22 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[300px]">
+      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px]">
         <h2 className="mb-[33px] text-2xl leading-[50px] font-bold text-[#5B5B5B] md:mb-[74px] md:text-center md:text-[40px]">
           Why choose us?
         </h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-16">
           <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-            <div className="absolute -top-8 bg-white px-[8.75px] py-[8.5px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+            <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
               <Image
                 src="/homepage/streamline-plump.svg"
-                width={44.5}
-                height={45}
+                className="object-contain"
+                sizes="100vw"
+                fill
                 alt="icon"
               />
+              </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Transparent & Trustworthy
@@ -146,13 +149,16 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-            <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
               <Image
                 src="/homepage/support.svg"
-                width={44.5}
-                height={45}
+                className="object-contain"
+                sizes="100vw"
+                fill
                 alt="icon"
               />
+              </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Comprehensive Coverage Options
@@ -163,13 +169,16 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-            <div className="absolute -top-8 bg-white px-[15px] py-[7px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
               <Image
                 src="/homepage/coverage.svg"
-                width={44.5}
-                height={45}
+                className="object-contain"
+                sizes="100vw"
+                fill
                 alt="icon"
               />
+              </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               24/7 Support
@@ -180,13 +189,16 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-            <div className="absolute -top-8 bg-white p-[15px] rounded-2xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
+          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
               <Image
                 src="/homepage/innovation.svg"
-                width={44.5}
-                height={45}
+                className="object-contain"
+                sizes="100vw"
+                fill
                 alt="icon"
               />
+              </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Innovation
@@ -200,7 +212,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-[44px] mx-5 relative md:mt-[150px] md:mx-0">
-        <h2 className="text-custom-grey text-2xl font-semibold leading-[50.4px] text-center md:text[40px]">
+        <h2 className="text-custom-grey text-2xl font-semibold leading-[50.4px] text-center md:text-[40px]">
           3 Steps to safeguarding your Home
         </h2>
         <h5 className="max-w-[933px] mx-auto mt-4 text-base text-[#6C6C6C] font-normal leading-[23.2px] text-center">
