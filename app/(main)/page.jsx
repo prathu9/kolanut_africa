@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </div>
       {/* <CoverSwiper /> */}
-      <div className="relative max-w-[1920px] h-[359px] flex justify-center items-center overflow-hidden">
+      <div className="relative max-w-[1920px] h-[359px] px-5 flex items-center justify-center overflow-hidden md:px-10 md:justify-center md:items-stretch md:flex-col">
         <Image
           className="absolute overflow-visible left-[-82%] w-[1670px] h-[359px] object-cover sm:left-[0%]"
           width={0}
@@ -87,7 +87,7 @@ export default function Home() {
           <h2 className="mb-[54px] text-[#FAFBFF] text-center text-base font-semibold leading-[20.16px] sm:leading-[30.24px] sm:text-2xl">
             We partner with Top Insurance companies
           </h2>
-          <div className="flex gap-10 justify-center flex-wrap lg:justify-between lg:gap-[100px] 2xl:gap-[176.59px]">
+          <div className="w-full flex flex-wrap gap-5 md:justify-between">
             <div className="relative w-[97.67px] h-[33.18px] md:w-[158.94px] md:h-[54px]">
               <Image
                 src="/homepage/partner-1.svg"
