@@ -143,7 +143,7 @@ export default function Home() {
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Transparent & Trustworthy
             </h3>
-            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+            <p className="min-h-[71px] text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
               We provide clear, unbiased information to help you make an
               informed decision without any hidden fees or charges
             </p>
@@ -163,7 +163,7 @@ export default function Home() {
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Comprehensive Coverage Options
             </h3>
-            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+            <p className="min-h-[71px] text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
               From fire and theft to natural disasters, find coverage that
               protects what matters most to you.
             </p>
@@ -183,7 +183,7 @@ export default function Home() {
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               24/7 Support
             </h3>
-            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+            <p className="min-h-[71px] text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
               Our dedicated team is here to assist you at every step of your
               insurance journey.
             </p>
@@ -203,7 +203,7 @@ export default function Home() {
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
               Innovation
             </h3>
-            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
+            <p className="min-h-[71px] text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-[20.26px]">
               We embrace innovation as a driving force behind our quest to
               revolutionize the home insurance industry. we continually seek new
               ways to improve the insurance experience for our customers.
