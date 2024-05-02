@@ -212,15 +212,15 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-[44px] mx-5 relative md:mt-[150px] md:mx-0">
-        <h2 className="text-custom-grey text-2xl font-semibold leading-[50.4px] text-center md:text-[40px]">
+        <h2 className="text-custom-grey text-2xl font-semibold leading-[30.24px] md:text-center md:text-[40px] md:leading-[50.4px]">
           3 Steps to safeguarding your Home
         </h2>
-        <h5 className="max-w-[933px] mx-auto mt-4 text-base text-[#6C6C6C] font-normal leading-[23.2px] text-center">
+        <h5 className="max-w-[933px] mx-auto mt-4 text-sm leading-[20.3px] text-[#6C6C6C] font-normal md:text-base md:leading-[23.2px] md:text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam,{" "}
         </h5>
-        <div className="mt-[77px] mb-[32px] w-full h-[178px] aspect-ratio relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
+        <div className="mt-[68px] mb-[32px] w-full h-[178px] aspect-ratio relative rounded-[32px] overflow-hidden md:mt[77px] md:mb-[84px] sm:h-fit">
           <Image
             className="ml-auto right-0 object-contain hidden sm:block"
             src="/homepage/bg-1.svg"
