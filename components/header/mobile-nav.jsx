@@ -10,7 +10,7 @@ const MobileNav = () => {
     setShowMobileNav(true);
   };
 
-  const hideMobileNav = () => {
+  const hideMobileNav  = () => {
     setShowMobileNav(false);
   };
 
@@ -91,27 +91,27 @@ const MobileNav = () => {
                     </Link>
                 </li>
                 <li className="text-base leading-[23.2px] font-normal text-[#F4F2F1]">
-                    <Link className="py-5 block w-full h-full text-center" href="/">
+                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/">
                         Coverage
                     </Link>
                 </li>
                 <li className="text-base leading-[23.2px] font-normal text-[#F4F2F1]">
-                    <Link className="py-5 block w-full h-full text-center" href="/">
+                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/">
                         Claims
                     </Link>
                 </li>
                 <li className="text-base leading-[23.2px] font-normal text-[#F4F2F1]">
-                    <Link className="py-5 block w-full h-full text-center" href="/about-us">
+                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/about-us">
                         About us
                     </Link>
                 </li>
                 <li className="mt-[120px]">
-                    <Link href="/login" className="px-6 py-3 text-lg font-normal leading-[26.1px] text-[#310204] bg-[#F0F0F0] rounded-xl">
+                    <Link onClick={hideMobileNav} href="/login" className="px-6 py-3 text-lg font-normal leading-[26.1px] text-[#310204] bg-[#F0F0F0] rounded-xl">
                         Log in
                     </Link>
                 </li>
                 <li className="mt-[64px]">
-                    <Link href="/login" className="px-6 py-3 border-2 border-custom-red text-lg font-normal leading-[26.1px] text-white bg-custom-red rounded-xl">
+                    <Link onClick={hideMobileNav} href="/login" className="px-6 py-3 border-2 border-custom-red text-lg font-normal leading-[26.1px] text-white bg-custom-red rounded-xl">
                         Get Started
                     </Link>
                 </li>
