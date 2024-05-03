@@ -59,7 +59,7 @@ const About = () => {
           <h2 className="mb-3 text-2xl font-bold leading-[30.24px] text-[#444444]md:text-[40px] md:leading-[50.4px]">
             Who we are
           </h2>
-          <p className="mb-12 text-base font-sm leading-[21px] text-[#5B5B5B] md:mb-8 md:text-base md:leading-[22px]">
+          <p className="mb-12 text-sm font-normal leading-[21px] text-[#5B5B5B] md:mb-8 md:text-base md:leading-[22px]">
             Kolanut Africa is a new wave of home insurance, built with the needs
             of everyday Nigerians in mind. We believe everyone deserves the
             peace of mind that comes with knowing your home is protected. At
@@ -103,7 +103,7 @@ const About = () => {
           <h3 className="mb-3 font-semibold text-2xl leading-[26.46px] text-custom-red md:text-[21px] md:leading-[26.46px]">
             Our vision
           </h3>
-          <p className="mb-8 text-base font-medium leading-[22px] text-[#5B5B5B]">
+          <p className="mb-8 text-sm font-medium leading-[21px] text-[#5B5B5B] md:text-base md:leading-[22px]">
             Our vision is to become the leading provider of home insurance in
             Nigeria, known for our unwavering commitment to our customers and
             our innovative approach to insurance. We envision a future where
@@ -113,7 +113,7 @@ const About = () => {
           <h3 className="mb-3 font-semibold text-2xl leading-[26.46px] text-custom-red md:text-[21px] md:leading-[26.46px]">
             Our mission
           </h3>
-          <p className="text-base font-medium leading-[22px] text-[#5B5B5B] md:mb-8">
+          <p className="text-sm font-medium leading-[21px] text-[#5B5B5B] md:mb-8 md:text-base md:leading-[22px]">
             To make home insurance available and accessible to every Nigerian
             household, regardless of their location or socioeconomic status. We
             believe that every homeowner deserves the security of insurance
@@ -156,7 +156,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mb-[88.88px] mx-auto flex px-5 gap-[65px] justify-center md:mb-[120px] lg:px-24 ">
+      <div className="mb-[25.88px] mx-auto flex px-5 gap-[65px] justify-center md:mb-[120px] lg:px-24 ">
         <div className="basis-[530px] rounded-2xl overflow-hidden hidden md:block">
           <Image
             src="/about/business-man.png"
@@ -173,13 +173,13 @@ const About = () => {
             We are a team built on the promise of a safe Home
           </h2>
           <div className="mb-8 basis-[353px] rounded-2xl overflow-hidden block md:mb-0 md:hidden">
-          <Image
-            src="/about/business-man.png"
-            width={353}
-            height={428.12}
-            alt="leader"
-          />
-        </div>
+            <Image
+              src="/about/business-man.png"
+              width={353}
+              height={428.12}
+              alt="leader"
+            />
+          </div>
           <p className="mb-4 text-sm font-normal leading-[21px] text-[#5B5B5B] md:mb-[37px] md:text-base md:leading-[22px]">
             Kolanut Africa was born out of a shared vision and a passion for
             making a positive impact on people&apos;s lives. It all began with a
@@ -194,7 +194,7 @@ const About = () => {
             unexpected events on families and communities, we recognized the
             critical importance of having reliable insurance coverage.
           </p>
-          <p className="mb-4 text-sm font-normal leading-[21px] text-[#5B5B5B] md:mb-[37px] md:text-base md:leading-[22px]">
+          <p className="text-sm font-normal leading-[21px] text-[#5B5B5B] md:mb-[37px] md:text-base md:leading-[22px]">
             Through perseverance, collaboration, and a relentless focus on our
             core values, Kolanut Africa has emerged as a beacon of hope and
             opportunity in the insurance industry. We&apos;ve overcome numerous
@@ -212,80 +212,64 @@ const About = () => {
           for excellence
         </h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-12 md:gap-y-16">
-          <div className="relative px-6 pt-[62px] basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE] md:basis-[48%]">
-            <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
-            <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/about/value-1.svg"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
-              </div>
-            </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
-            </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
-            </p>
-          </div>
-          <div className="relative px-6 pt-[62px] basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
-                <Image
-                  src="/about/value-2.svg"
-                  sizes="100vw"
-                  fill
-                  alt="icon"
-                />
+                <Image src="/about/value-1.svg" sizes="100vw" fill alt="icon" />
               </div>
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base leading-[20.16px] font-semibold text-custom-grey md:text-[21px] md:leading-[26.46px]">
+              Integrity
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-6">
+              We believe in conducting business with honesty, transparency, and
+              integrity. Trust is the foundation of our relationships with our
+              customers, and we uphold the highest ethical standards in all our
+              interactions.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
-            <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/about/value-3.svg"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
+                <Image src="/about/value-2.svg" sizes="100vw" fill alt="icon" />
               </div>
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base leading-[20.16px] font-semibold text-custom-grey md:text-[21px] md:leading-[26.46px]">
+              Empathy
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-6">
+              We understand the importance of empathy and compassion in serving
+              our customers during their times of need.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-[206px] border border-[#DEDEDE] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
-            <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/about/value-4.svg"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
+                <Image src="/about/value-3.svg" sizes="100vw" fill alt="icon" />
               </div>
             </div>
-            <h3 className="mb-4 text-[21px] font-semibold text-custom-grey">
-              Transparent & Trustworthy
+            <h3 className="mb-4 text-base leading-[20.16px] font-semibold text-custom-grey md:text-[21px] md:leading-[26.46px]">
+              Community
             </h3>
-            <p className="text-base leading-[20.26px] font-medium text-[#7A7D86]">
-              We provide clear, unbiased information to help you make an
-              informed decision without any hidden fees or charges
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-6">
+              We are committed to making a positive impact in the communities we
+              serve. we strive to uplift and support those in need, fostering a
+              culture of compassion and social responsibility.
+            </p>
+          </div>
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
+            <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
+              <div className="relative w-6 h-6 md:w-8 md:h-8">
+                <Image src="/about/value-4.svg" sizes="100vw" fill alt="icon" />
+              </div>
+            </div>
+            <h3 className="mb-4 text-base leading-[20.16px] font-semibold text-custom-grey md:text-[21px] md:leading-[26.46px]">
+              Innovation
+            </h3>
+            <p className="text-sm leading-[21px] font-medium text-[#7A7D86] md:text-base md:leading-6">
+              We embrace innovation as a driving force behind our quest to
+              revolutionize the home insurance industry. we continually seek new
+              ways to improve the insurance experience for our customers.
             </p>
           </div>
         </div>
@@ -351,7 +335,7 @@ const About = () => {
               </div>
             </div>
             <div className="basis-full md:basis-1/3">
-              <div  className="mx-auto relative w-full aspect-square bg-[#FFE5E6]">
+              <div className="mx-auto relative w-full aspect-square bg-[#FFE5E6]">
                 <Image
                   className="absolute object-contain bottom-0"
                   src="/about/team-2.png"
