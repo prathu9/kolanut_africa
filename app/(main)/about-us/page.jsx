@@ -212,7 +212,7 @@ const About = () => {
           for excellence
         </h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-12 md:gap-y-16">
-          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:basis-[48%] md:h-[280px] xl:h-[206px]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
                 <Image src="/about/value-1.svg" sizes="100vw" fill alt="icon" />
@@ -228,7 +228,7 @@ const About = () => {
               interactions.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:basis-[48%] md:h-[280px] xl:h-[206px]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
                 <Image src="/about/value-2.svg" sizes="100vw" fill alt="icon" />
@@ -242,7 +242,7 @@ const About = () => {
               our customers during their times of need.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:basis-[48%] md:h-[280px] xl:h-[206px]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
                 <Image src="/about/value-3.svg" sizes="100vw" fill alt="icon" />
@@ -257,7 +257,7 @@ const About = () => {
               culture of compassion and social responsibility.
             </p>
           </div>
-          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:h-[206px] md:basis-[48%]">
+          <div className="relative px-6 pt-[62px] pb-6 basis-full h-fit rounded-2xl bg-[#F7F7F7] max-w-[612px] border border-[#DEDEDE] md:basis-[48%] md:h-[280px] xl:h-[206px]">
             <div className="absolute -top-5 bg-white p-[8px] rounded-lg border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] md:-top-8 md:p-[15px] md:rounded-2xl">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
                 <Image src="/about/value-4.svg" sizes="100vw" fill alt="icon" />
