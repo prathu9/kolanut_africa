@@ -371,30 +371,30 @@ export default function Home() {
         </p>
         <div className="flex mt-9 pb-[51px] justify-center lg:ml-[80px] md:pb-[151px] md:ml-[40px] md:mt-[118px]">
           <div>
-            <div className="max-w-[522px] mb-16">
-              <h3 className="mb-2 text-custom-red text-2xl font-semibold leading-[28.8px]">
+            <div className="max-w-[522px] mb-6 md:mb-10">
+              <h3 className="mb-2 text-custom-red text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
                 Personal Properties
               </h3>
-              <p className="mb-6 text-[#67696D] leading-[26.1px] font-normal">
+              <p className="mb-6 text-sm leading-[21px] text-[#67696D] font-normal md:text-lg md:leading-[27px]">
                 Safeguard your home against  losses from unforeseen events such
                 as fire, theft, and natural disasters.
               </p>
             </div>
-            <div className="max-w-[522px] mb-16">
-              <h3 className="mb-2 text-custom-grey text-2xl font-semibold leading-[28.8px]">
+            <div className="max-w-[522px] mb-6 md:mb-10">
+              <h3 className="mb-2 text-custom-grey text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
                 Commercial Properties
               </h3>
-              <p className="mb-6 text-[#67696D] leading-[26.1px]  font-normal">
+              <p className="mb-6 text-sm leading-[21px] text-[#67696D] font-normal md:text-lg md:leading-[27px]">
                 From inventory protection to liability coverage, we ensure that
                 your place of business is secure, allowing you to focus on
                 serving your customers with confidence
               </p>
             </div>
-            <div className="max-w-[522px] mb-16">
-              <h3 className="mb-2 text-custom-grey text-2xl font-semibold leading-[28.8px]">
+            <div className="max-w-[522px] mb-6 md:mb-10">
+              <h3 className="mb-2 text-custom-grey text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
                 Industrial Properties
               </h3>
-              <p className="mb-6 text-[#67696D] leading-[26.1px]  font-normal">
+              <p className="mb-6 text-sm leading-[21px] text-[#67696D] font-normal md:text-lg md:leading-[27px]">
                 Specially crafted to provide robust protection for big
                 industries and warehouses.. From equipment breakdown to
                 liability risks associated with large-scale operations and
@@ -402,11 +402,11 @@ export default function Home() {
                 complexities
               </p>
             </div>
-            <div className="max-w-[522px] md:mb-16">
-              <h3 className="mb-2 text-custom-grey text-2xl font-semibold leading-[28.8px]">
+            <div className="max-w-[522px] mb-6 md:mb-10">
+              <h3 className="mb-2 text-custom-grey text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
                 Corporate Propertiess
               </h3>
-              <p className="mb-6 text-[#67696D] leading-[26.1px] font-normal">
+              <p className="mb-6 text-sm leading-[21px] text-[#67696D] font-normal md:text-lg md:leading-[27px]">
                 From construction risks to ensuring quality standards, our
                 insurance solutions are designed to support property developers
                 in delivering secure and reliable homes to their client
@@ -428,46 +428,46 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-[88px] mx-5 mb-[88px] md:pt-20 md:mt-[200px] md:mx-20 md:mb-20">
-        <h2 className="mb-14 text-2xl leading-[30.24px] font-semibold md:text-center md:text-[40px] md:leading-[50.4px]">
+        <h2 className="mb-8 text-2xl leading-[30.24px] font-semibold md:mb-14 md:text-center md:text-[40px] md:leading-[50.4px]">
           What our customers are saying about us
         </h2>
         <div className="flex gap-[36px] justify-center flex-wrap md:flex-nowrap">
           <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] h-fit md:py-6">
-            <p className="font-normal text-base leading-[23.2px] text-[#535763]">
+            <p className="font-normal text-sm leading-[20.3px] text-[#535763] md:text-base md:leading-[23.2px]">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam”{" "}
             </p>
-            <span className="mt-6 mb-3 block font-semibold leading-[29px] text-xl text-[#535763]">
+            <span className="mt-6 mb-3 block font-semibold text-base leading-[23.2px] text-[#535763] md:leading-[29px] md:text-xl">
               John Doe
             </span>
-            <span className="block font-normal text-[#535763] text-base leading-[23.2px]">
+            <span className="block font-normal text-[#535763] text-sm leading-[20.3px] md:text-base md:leading-[23.2px]">
               Ceo of Ledger
             </span>
           </div>
           <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
-            <p className="font-normal text-base leading-[23.2px] text-[#535763]">
+            <p className="font-normal text-sm leading-[20.3px] text-[#535763] md:text-base md:leading-[23.2px]">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam”{" "}
             </p>
-            <span className="mt-6 mb-3 block font-semibold leading-[29px] text-xl text-[#535763]">
+            <span className="mt-6 mb-3 block font-semibold text-base leading-[23.2px] text-[#535763] md:leading-[29px] md:text-xl">
               John Doe
             </span>
-            <span className="block font-normal text-[#535763] text-base leading-[23.2px]">
+            <span className="block font-normal text-[#535763] text-sm leading-[20.3px] md:text-base md:leading-[23.2px]">
               Ceo of Ledger
             </span>
           </div>
           <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
-            <p className="font-normal text-base leading-[23.2px] text-[#535763]">
+            <p className="font-normal text-sm leading-[20.3px] text-[#535763] md:text-base md:leading-[23.2px]">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam”{" "}
             </p>
-            <span className="mt-6 mb-3 block font-semibold leading-[29px] text-xl text-[#535763]">
+            <span className="mt-6 mb-3 block font-semibold text-base leading-[23.2px] text-[#535763] md:leading-[29px] md:text-xl">
               John Doe
             </span>
-            <span className="block font-normal text-[#535763] text-base leading-[23.2px]">
+            <span className="block font-normal text-[#535763] text-sm leading-[20.3px] md:text-base md:leading-[23.2px]">
               Ceo of Ledger
             </span>
           </div>
@@ -658,10 +658,10 @@ export default function Home() {
         </div>
       </div>
       <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[200px] md:mb-[207px] md:mx-20 md:pt-[54px] md:pb-20">
-        <h2 className="mb-10 text-custom-grey text-2xl leading-[30.24px] font-semibold md:leading-[50.4px] md:text-[40px] md:text-center">
+        <h2 className="mb-2 text-custom-grey text-2xl leading-[30.24px] font-semibold md:mb-10 md:leading-[50.4px] md:text-[40px] md:text-center">
           Frequently asked questions
         </h2>
-        <p className="mb-10 max-w-[656px] text-base leading-[21px] font-normal text-[#535763] md:text-lg md:leading-[26.1px] md:text-center md:m-auto">
+        <p className="mb-10 max-w-[656px] text-sm leading-[21px] font-normal text-[#535763] md:text-lg md:leading-[26.1px] md:text-center md:m-auto">
           You have questions?we have answers to all your questions and if you
           can’t find an answer to your question here, contact us.
         </p>
