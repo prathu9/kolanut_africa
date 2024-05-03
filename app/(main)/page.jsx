@@ -46,7 +46,7 @@ const faq = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-[1920px]">
-      <div className="mb-[120px] px-4 flex flex-wrap md:gap-8 md:px-20 md:flex-nowrap md:mb-[160px]">
+      <div className="mb-[120px] px-4 flex flex-wrap justify-center md:gap-8 md:px-20 md:flex-nowrap md:mb-[160px]">
         <div className="w-full mt-[88.17px] font-semibold text-custom-grey lg:w-[608px] text-center md:mt-[116px] md:text-left">
           <h1 className="text-3xl leading-[36px] md:text-5xl md:leading-[57.6px]">
             Home insurance policy tailored for everyone
@@ -75,9 +75,9 @@ export default function Home() {
         </div>
       </div>
       {/* <CoverSwiper /> */}
-      <div className="relative max-w-[1920px] h-[359px] px-5 flex items-center justify-center overflow-hidden md:px-10 md:justify-center md:items-stretch md:flex-col">
+      <div className="relative max-w-[1920px] h-[280px] px-5 py-5 flex items-center justify-center overflow-hidden box-content md:h-[420px] md:px-10 md:justify-center md:items-stretch md:flex-col">
         <Image
-          className="absolute overflow-visible left-[-82%] w-[1670px] h-[359px] object-cover sm:left-[0%]"
+          className="absolute overflow-visible -left-[63%] w-[1920px] h-[300px] object-cover sm:left-[0%]"
           width={0}
           height={0}
           src="/homepage/wave-vector.svg"
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px]">
+      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px] md:pb-[54px]">
         <h2 className="mb-[33px] text-2xl leading-[50px] font-bold text-[#5B5B5B] md:mb-[74px] md:text-center md:text-[40px]">
           Why choose us?
         </h2>
@@ -131,13 +131,13 @@ export default function Home() {
           <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
             <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/homepage/streamline-plump.svg"
-                className="object-contain"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+                <Image
+                  src="/homepage/streamline-plump.svg"
+                  className="object-contain"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
               </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
@@ -149,15 +149,15 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+            <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/homepage/support.svg"
-                className="object-contain"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+                <Image
+                  src="/homepage/support.svg"
+                  className="object-contain"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
               </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
@@ -169,15 +169,15 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full  rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+            <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/homepage/coverage.svg"
-                className="object-contain"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+                <Image
+                  src="/homepage/coverage.svg"
+                  className="object-contain"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
               </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
@@ -189,15 +189,15 @@ export default function Home() {
             </p>
           </div>
           <div className="relative px-6 pt-[62px] pb-8 basis-full rounded-2xl bg-[#F7F7F7] max-w-[612px] h-fit border border-[#DEDEDE] md:basis-[48%]">
-          <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
+            <div className="absolute -top-8 bg-white p-3 rounded-xl border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)] ">
               <div className="relative w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/homepage/innovation.svg"
-                className="object-contain"
-                sizes="100vw"
-                fill
-                alt="icon"
-              />
+                <Image
+                  src="/homepage/innovation.svg"
+                  className="object-contain"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
               </div>
             </div>
             <h3 className="mb-4 text-base font-semibold text-custom-grey md:text-[21px]">
@@ -211,7 +211,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[44px] mx-5 relative md:mt-[150px] md:mx-0">
+      <div className="mt-[44px] mx-5 relative md:mt-[200px] md:mx-0 lg:mx-20">
         <h2 className="text-custom-grey text-2xl font-semibold leading-[30.24px] md:text-center md:text-[40px] md:leading-[50.4px]">
           3 Steps to safeguarding your Home
         </h2>
@@ -220,104 +220,121 @@ export default function Home() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam,{" "}
         </h5>
-        <div className="mt-[68px] mb-[32px] w-full h-[178px] aspect-ratio relative rounded-[32px] overflow-hidden md:mt[77px] md:mb-[84px] sm:h-fit">
+        <div className="mt-[68px] mb-[32px]  w-full aspect-[2.3] relative rounded-[32px] overflow-hidden md:mt[77px] md:mb-[84px]">
           <Image
-            className="ml-auto right-0 object-contain hidden sm:block"
+            className="right-0 object-contain"
             src="/homepage/bg-1.svg"
             alt="bg"
-            width={1280}
-            height={536}
-          />
-          <Image
-            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[178px]"
-            src="/homepage/bg-mobile-1.svg"
-            alt="bg"
-            width={353}
-            height={178}
+            sizes="100vw"
+            fill
           />
         </div>
-        <div className="mb-[32px] h-[181.19px] relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
+        <div className="mb-[32px] w-full aspect-[1.95]  relative rounded-[32px] overflow-hidden md:mb-[84px]">
           <Image
-            className="ml-auto right-0 object-contain hidden sm:block"
+            className="right-0 object-contain"
             src="/homepage/bg-2.svg"
             alt="bg"
-            width={1280}
-            height={657}
-          />
-          <Image
-            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[181.19px]"
-            src="/homepage/bg-mobile-2.svg"
-            alt="bg"
-            width={353}
-            height={181.19}
+            sizes="100vw"
+            fill
           />
         </div>
-        <div className="mb-[32px] h-[134.58px] relative rounded-[32px] overflow-hidden md:mb-[84px] sm:h-fit">
+        <div className="mb-[32px] w-full aspect-[2.62] relative rounded-[32px] overflow-hidden md:mb-[84px]">
           <Image
-            className="ml-auto right-0 object-contain hidden sm:block"
+            className="right-0 object-contain"
             src="/homepage/bg-3.svg"
             alt="bg"
-            width={1280}
-            height={657}
-          />
-          <Image
-            className="ml-auto right-0 object-contain sm:hidden sm:w-[353px] sm:h-[181.19px]"
-            src="/homepage/bg-mobile-3.svg"
-            alt="bg"
-            width={353}
-            height={134.58}
+            sizes="100vw"
+            fill
           />
         </div>
       </div>
-      <div className="px-5 mt-[88.23px] mb-[88px] flex justify-between items-center gap-5 flex-wrap-reverse lg:mx-20 lg:mb-[200px] lg:mt-[300px] md:items-start">
-        <div className="basis-full max-w-[581px] md:basis-2/5">
-          <h2 className="mb-[24px] text-3xl font-semibold leading-[30.24px] md:leading-[50.4px] md:text-[40px]">
+      <div className="px-5 mt-[88.23px] mb-[88px] flex items-center justify-between gap-[63px] flex-wrap lg:mx-20 lg:mb-[200px] lg:mt-[200px] md:items-start">
+        <div className="basis-full md:basis-2/5">
+          <h2 className="mb-[24px] text-2xl text-center font-semibold leading-[30.24px] md:leading-[50.4px] md:text-[40px] md:text-left">
             On the spot assistance from expert advisors
           </h2>
-          <p className="text-sm font-normal leading-[21px] md:leading-[26.1px] md:text-lg">
+          <p className="mb-10 text-sm font-normal leading-[21px] md:leading-[26.1px] md:mt-0 md:text-lg">
             Support doesn’t end after you find your best rate. We’re here to
             help whenever you need advice, from navigating claims to adjusting
             coverage after big life events.
           </p>
-          <h3 className="mt-[60px] mb-[32px] text-[28px] leading-[35.8px] font-semibold">
+          <figure className="basis-full aspect-square relative md:basis-[45%] block md:hidden">
+            <div className="aspect-square rounded-t-[35.6px] relative overflow-hidden">
+              <Image
+                className="absolute top-[17px] right-[41.93px] z-10"
+                src="/homepage/label--inject.svg"
+                width={35.95}
+                height={49.74}
+                alt="label"
+              />
+              <Image
+                src="/homepage/francis-odeyemi.png"
+                sizes="100%"
+                style={{ objectFit: "cover" }}
+                fill
+                alt="person"
+              />
+              <figcaption className="pt-[14px] flex flex-col items-center absolute h-[58px] w-full bg-white bottom-0 md:h-[105px]">
+                <h5 className="text-sm leading-[17.64px] font-medium text-custom-grey text-center md:text-2xl md:leading-[30.24px]">
+                  Mariam Olushola
+                </h5>
+                <ul className="mt-[10.17px] ml-10 text-[10px] leading-[12.8px] font-normal text-[#535763] flex gap-[13.34px] md:text-base md:leading-[20.16px] md:gap-6">
+                  <li>Licensed Agent</li>
+                  <li className="list-disc ml-6">4+ years</li>
+                </ul>
+              </figcaption>
+            </div>
+          </figure>
+          <h3 className="mt-[60px] mb-[32px] text-lg leading-[22.68px] text-custom-grey font-semibold md:text-[28px] md:leading-[35.8px]">
             Supported by empathetic experts
           </h3>
           <ul>
             <li className="mb-4 flex items-center">
-              <Image
-                src="/homepage/list-icon-1.svg"
-                width={50}
-                height={50}
-                alt="icon"
-              />
-              <span className="ml-4 text-lg leading-[26px]">
+              <div className="relative w-10 h-10 md:w-[50px] md:h-[50px]">
+                <Image
+                  src="/homepage/list-icon-1.svg"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
+              </div>
+
+              <span className="ml-4 text-sm leading-[26px] md:text-lg md:leading-[26px]">
                 Assisted claims experience
               </span>
             </li>
             <li className="mb-4 flex items-center">
-              <Image
-                src="/homepage/list-icon-2.svg"
-                width={50}
-                height={50}
-                alt="icon"
-              />
-              <span className="ml-4 text-lg leading-[26px]">24/7 Support</span>
+              <div className="relative w-10 h-10 md:w-[50px] md:h-[50px]">
+                <Image
+                  src="/homepage/list-icon-2.svg"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
+              </div>
+
+              <span className="ml-4 text-sm leading-[26px] md:text-lg md:leading-[26px]">
+                24/7 Support
+              </span>
             </li>
             <li className="mb-4 flex items-center">
-              <Image
-                src="/homepage/list-icon-3.svg"
-                width={50}
-                height={50}
-                alt="icon"
-              />
-              <span className="ml-4 text-lg leading-[26px]">
+              <div className="relative w-10 h-10 md:w-[50px] md:h-[50px]">
+                <Image
+                  src="/homepage/list-icon-3.svg"
+                  sizes="100vw"
+                  fill
+                  alt="icon"
+                />
+              </div>
+
+              <span className="ml-4 text-sm leading-[26px] md:text-lg md:leading-[26px]">
                 Highest claims NPS
               </span>
             </li>
           </ul>
         </div>
-        <figure className="basis-full max-w-[635.63px] relative md:basis-[49%]">
-          <div className="max-w-[635px] h-[628px] rounded-t-[35.6px] relative overflow-hidden">
+        <figure className="basis-full  relative md:basis-[45%] hidden md:block">
+          <div className="aspect-square rounded-t-[35.6px] relative overflow-hidden">
             <Image
               className="absolute top-[17px] right-[41.93px] z-10"
               src="/homepage/label--inject.svg"
@@ -332,21 +349,27 @@ export default function Home() {
               fill
               alt="person"
             />
-            <figcaption className="absolute h-[105px] w-full bg-white bottom-0">
-              Mariam Olushola
+            <figcaption className="pt-[14px] flex flex-col items-center absolute h-[105px] w-full bg-white bottom-0">
+              <h5 className="text-sm leading-[17.64px] font-medium text-custom-grey text-center md:text-2xl md:leading-[30.24px]">
+                Mariam Olushola
+              </h5>
+              <ul className="mt-[10.17px] ml-10 text-[10px] leading-[12.8px] font-normal text-[#535763] flex gap-[13.34px] md:text-base md:leading-[20.16px] md:gap-6">
+                <li>Licensed Agent</li>
+                <li className="list-disc ml-6">4+ years</li>
+              </ul>
             </figcaption>
           </div>
         </figure>
       </div>
-      <div className="pt-[49px] px-5 md:pt-[100px]">
+      <div className="pt-[49px] px-5 md:pt-[100px] bg-gradient-1">
         <h2 className="max-w-[800px] mx-auto mb-2 text-custom-grey font-semibold text-2xl leading-[30.24px] text-left md:text-[40px] md:leading-[50.4px] md:text-center">
           Protect your most Treasured Space Against Risk
         </h2>
-        <p className="max-w-[656px] mx-auto text-left text-[#535763] font-normal text-sm leading-[20.3px] md:-text-center md:text-lg md:leading-[26.1px]">
+        <p className="max-w-[656px] mx-auto text-left text-[#535763] font-normal text-sm leading-[20.3px] md:text-center md:text-lg md:leading-[26.1px]">
           Our new suite of Home  insurance products to help you protect your
           home, furniture, and beautiful family memories.
         </p>
-        <div className="flex mt-9 mb-[163px] pb-[51px] lg:ml-[80px] md:pb-[151px] md:ml-[40px] md:mt-[118px]">
+        <div className="flex mt-9 pb-[51px] justify-center lg:ml-[80px] md:pb-[151px] md:ml-[40px] md:mt-[118px]">
           <div>
             <div className="max-w-[522px] mb-16">
               <h3 className="mb-2 text-custom-red text-2xl font-semibold leading-[28.8px]">
@@ -404,12 +427,38 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[88px] mx-5 mb-[88px] md:pt-20 md:mt-[300px] md:mx-20 md:mb-20">
-        <h2 className="mb-14 text-[40px] leading-[50.4px] font-semibold md:text-center">
+      <div className="mt-[88px] mx-5 mb-[88px] md:pt-20 md:mt-[200px] md:mx-20 md:mb-20">
+        <h2 className="mb-14 text-2xl leading-[30.24px] font-semibold md:text-center md:text-[40px] md:leading-[50.4px]">
           What our customers are saying about us
         </h2>
-        <div>
-          <div className="px-5 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
+        <div className="flex gap-[36px] justify-center flex-wrap md:flex-nowrap">
+          <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] h-fit md:py-6">
+            <p className="font-normal text-base leading-[23.2px] text-[#535763]">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam”{" "}
+            </p>
+            <span className="mt-6 mb-3 block font-semibold leading-[29px] text-xl text-[#535763]">
+              John Doe
+            </span>
+            <span className="block font-normal text-[#535763] text-base leading-[23.2px]">
+              Ceo of Ledger
+            </span>
+          </div>
+          <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
+            <p className="font-normal text-base leading-[23.2px] text-[#535763]">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam”{" "}
+            </p>
+            <span className="mt-6 mb-3 block font-semibold leading-[29px] text-xl text-[#535763]">
+              John Doe
+            </span>
+            <span className="block font-normal text-[#535763] text-base leading-[23.2px]">
+              Ceo of Ledger
+            </span>
+          </div>
+          <div className="px-5 py-6 bg-[#FCFCFC] rounded-3xl border-[1.5px] border-[#F0F0F0] max-w-[413px] md:py-6">
             <p className="font-normal text-base leading-[23.2px] text-[#535763]">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -424,7 +473,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-5 flex gap-8 flex-wrap lg:gap-[125px] lg:mx-20">
+      <div className="mx-5 flex gap-8 flex-wrap justify-center md:mt-[200px] lg:gap-[125px] lg:mx-20">
         <div className="basis-full md:max-w-[575px] md:basis-[42%]">
           <h2 className="mb-2 text-custom-grey text-2xl leading-[34.8px] font-semibold md:text-5xl md:leading-[69.6px]">
             The Kolanut shield{" "}
@@ -438,14 +487,14 @@ export default function Home() {
         <div className="flex flex-wrap gap-x-20 gap-y-6 basis-full md:max-w-[537px] md:basis-[42%]">
           <div>
             <Image
-             className="hidden md:block"
+              className="hidden md:block"
               src="/homepage/partner-1.png"
               width={220.75}
               height={75}
               alt="partner"
             />
             <Image
-            className="block md:hidden"
+              className="block md:hidden"
               src="/homepage/partner-1.png"
               width={143.36}
               height={48.71}
@@ -454,14 +503,14 @@ export default function Home() {
           </div>
           <div>
             <Image
-             className="hidden md:block"
+              className="hidden md:block"
               src="/homepage/partner-2.png"
               width={99.33}
               height={75}
               alt="partner"
             />
-             <Image
-             className="block md:hidden"
+            <Image
+              className="block md:hidden"
               src="/homepage/partner-2.png"
               width={64.51}
               height={48.71}
@@ -470,14 +519,14 @@ export default function Home() {
           </div>
           <div>
             <Image
-             className="hidden md:block"
+              className="hidden md:block"
               src="/homepage/partner-3.png"
               width={75}
               height={75}
               alt="partner"
             />
             <Image
-            className="block md:hidden"
+              className="block md:hidden"
               src="/homepage/partner-3.png"
               width={48.71}
               height={48.71}
@@ -486,23 +535,24 @@ export default function Home() {
           </div>
           <div>
             <Image
-            className="hidden md:block"
+              className="hidden md:block"
               src="/homepage/partner-4.png"
               width={302.78}
               height={75}
               alt="partner"
-            /><Image
-            className="block md:hidden"
-            src="/homepage/partner-4.png"
-            width={196.63}
-            height={48.71}
-            alt="partner"
-          />
+            />
+            <Image
+              className="block md:hidden"
+              src="/homepage/partner-4.png"
+              width={196.63}
+              height={48.71}
+              alt="partner"
+            />
           </div>
         </div>
       </div>
-      <div className="mt-[98.59px] mx-5 xl:px-24 md:mx-20 md:pt-[120px] md:mt-[300px] md:pb-[118px]">
-        <div className="mb-9 flex justify-between md:mb-20">
+      <div className="mt-[98.59px] mx-5 md:mx-20 md:pt-[120px] md:mt-[194px] md:pb-[118px] xl:px-24">
+        <div className="max-w-[1248px] mx-auto mb-9 flex justify-between md:mb-20">
           <h2 className="text-2xl leading-[30.24px] font-bold text-[#444444]md:text-[40px] md:leading-[50.4px]">
             News and updates
           </h2>
@@ -535,7 +585,7 @@ export default function Home() {
             </svg>
           </span>
         </div>
-        <div className="flex gap-12 flex-wrap justify-center md:justify-start md:flex-nowrap md:gap-6">
+        <div className="flex gap-12 flex-wrap justify-center md:justify-center md:flex-nowrap md:gap-6">
           <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
             <div className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-1.png" sizes="100%" fill alt="blog" />
@@ -560,7 +610,7 @@ export default function Home() {
             </span>
           </div>
           <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
-            <div  className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
+            <div className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-2.png" sizes="100%" fill alt="blog" />
             </div>
             <h3
@@ -583,7 +633,7 @@ export default function Home() {
             </span>
           </div>
           <div className="max-w-[352px] basis-full md:basis-[33%] md:max-w-[400px]">
-            <div  className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
+            <div className="relative w-full h-[226px] rounded-[20px] md:h-[254px]">
               <Image src="/homepage/blog-3.png" sizes="100%" fill alt="blog" />
             </div>
             <h3
@@ -607,8 +657,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[238px] md:mb-[300px] md:mx-20 md:pt-[54px] md:pb-20">
-        <h2 className="mb-2 text-custom-grey text-2xl leading-[30.24px] font-semibold md:leading-[50.4px] md:text-[40px] md:text-center">
+      <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[200px] md:mb-[207px] md:mx-20 md:pt-[54px] md:pb-20">
+        <h2 className="mb-10 text-custom-grey text-2xl leading-[30.24px] font-semibold md:leading-[50.4px] md:text-[40px] md:text-center">
           Frequently asked questions
         </h2>
         <p className="mb-10 max-w-[656px] text-base leading-[21px] font-normal text-[#535763] md:text-lg md:leading-[26.1px] md:text-center md:m-auto">

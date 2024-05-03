@@ -45,13 +45,13 @@ const MobileNav = () => {
         </svg>
       </button>
       <nav
-        className={`pt-[46px] px-4 absolute top-0 right-[100%] w-full h-screen transition-all duration-150 flex flex-col lg:hidden bg-[#1B2327] ${
+        className={`pt-[46px] px-4 absolute top-0 right-[100%] w-full h-screen transition-all duration-150 flex flex-col z-20 lg:hidden bg-[#1B2327] ${
           showMobileNav ? "translate-x-full" : "translate-x-0"
         }`}
       >
         <div className="flex justify-between items-center">
-          <div className="relative z-10 w-[114.52px] h-[44.83px] lg:w-[196px] lg:h-[76.74px]">
-            <Link href="/">
+          <div className="relative z-20 w-[114.52px] h-[44.83px] lg:w-[196px] lg:h-[76.74px]">
+            <Link href="/" onClick={hideMobileNav}>
               <Image
                 src="./mobile-nav-logo.svg"
                 sizes="100vw"

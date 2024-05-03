@@ -11,6 +11,10 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-1": "linear-gradient(91.94deg, rgba(235, 239, 252, 0.22) 32.45%, rgba(228, 235, 253, 0.94) 75.82%)",
+        "step-gradient-1": "linear-gradient(91.94deg, rgba(235, 252, 240, 0.22) 32.45%, rgba(228, 253, 235, 0.94) 75.82%)",
+        "step-gradient-2": "linear-gradient(91.94deg, rgba(244, 235, 252, 0.22) 32.45%, rgba(246, 228, 253, 0.94) 75.82%)",
+        "step-gradient-3":"linear-gradient(91.94deg, rgba(235, 239, 252, 0.22) 32.45%, rgba(228, 235, 253, 0.94) 75.82%)"
       },
       colors: {
         "custom-red": "#AF060D",
