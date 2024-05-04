@@ -46,12 +46,12 @@ const faq = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-[1920px]">
-      <div className="mb-[120px] px-4 flex flex-wrap justify-center md:gap-8 md:px-20 md:flex-nowrap md:mb-[160px]">
-        <div className="w-full mt-[88.17px] font-semibold text-custom-grey lg:w-[608px] text-center md:mt-[116px] md:text-left">
+      <div className="mb-[120px] px-4 flex flex-wrap justify-center md:gap-8 md:px-20 lg:flex-nowrap md:mb-[160px]">
+        <div className="basis-[full] mt-[88.17px] font-semibold text-custom-grey lg:basis-[40%] text-center md:mt-[116px] md:text-left">
           <h1 className="text-3xl leading-[36px] md:text-5xl md:leading-[57.6px]">
             Home insurance policy tailored for everyone
           </h1>
-          <p className="text-base leading-[23.2px] mt-6 mb-12 font-[400] lg:text-lg lg:leading-[26.1px]">
+          <p className="max-w-[540px] text-base leading-[23.2px] mt-6 mb-12 font-[400] lg:text-lg lg:leading-[26.1px]">
             Whether you prefer to buy online or want expert guidance, Kolanut
             makes it easy to find your perfect home policy. The Cheapest home
             Insurance Deals at your Fingertips
@@ -64,17 +64,11 @@ export default function Home() {
             Companies
           </p>
         </div>
-        <div className="mt-[44px] mx-6 rounded-3xl overflow-hidden md:mt-[109.6px]">
-          <Image
-            src="/homepage/cover-1.png"
-            width={632}
-            height={491}
-            alt="cover"
-            className="rounded-3xl"
-          />
+        <div className="mt-[44px] mx-6 basis-full aspect-[1.28] rounded-3xl overflow-hidden lg:basis-[40%] md:mt-[109.6px]">
+          <CoverSwiper />
         </div>
       </div>
-      {/* <CoverSwiper /> */}
+      
       <div className="relative max-w-[1920px] h-[280px] px-5 py-5 flex items-center justify-center overflow-hidden box-content md:h-[420px] md:px-10 md:justify-center md:items-stretch md:flex-col">
         <Image
           className="absolute overflow-visible -left-[63%] w-[1920px] h-[300px] object-cover sm:left-[0%]"
