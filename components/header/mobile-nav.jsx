@@ -91,7 +91,7 @@ const MobileNav = () => {
                     </Link>
                 </li>
                 <li className="text-base leading-[23.2px] font-normal text-[#F4F2F1]">
-                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/">
+                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/coverage">
                         Coverage
                     </Link>
                 </li>
