@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./mobile-nav";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+
+  const pathname = usePathname();
+
   return (
     <div className="mx-auto relative flex justify-between align-middle max-w-[1920px] px-4 py-10 lg:px-[100px] lg:py-[24px]">
       <div className="relative w-[114.52px] h-[44.83px] lg:w-[196px] lg:h-[76.74px]">
@@ -16,13 +21,13 @@ const Header = () => {
             How it works
           </li>
           <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
-            <Link href="/coverage">Coverage</Link>
+            <Link href="/coverage"  className={`pb-4 border-b-[1.5px] ${pathname === "/coverage"? "border-custom-red":"border-transparent"}`}>Coverage</Link>
           </li>
           <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
-            <Link href="/claims">Claims</Link>
+            <Link href="/claims" className={`pb-4 border-b-[1.5px] ${pathname === "/claims"? "border-custom-red":"border-transparent"}`}>Claims</Link>
           </li>
           <li className="w-fit h-[23px] font-[400] text-base text-[#535763]">
-            <Link href="/about-us">About us</Link>
+            <Link href="/about-us" className={`pb-4 border-b-[1.5px] ${pathname === "/about-us"? "border-custom-red":"border-transparent"}`}>About us</Link>
           </li>
         </ul>
       </nav>
