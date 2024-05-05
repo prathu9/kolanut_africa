@@ -1,6 +1,7 @@
 import Accordion from "@/components/accordion/accordion";
 import Fire from "@/icons/fire";
 import Image from "next/image";
+import ClaimCompensation from "../_component/claim-compensation";
 
 const faq = [
     {
@@ -43,7 +44,7 @@ const faq = [
 const ClaimsPage = () => {
   return (
     <main className="max-w-[1920px]">
-      <div className="mb-[116px] flex justify-between md:mt-[203px] md:ml-[87px] md:mr-[118px]">
+      <div className="mb-[116px] flex justify-between md:mt-[203px] md:mx-[118px]">
         <div className="basis-full md:basis-[48%]">
           <div className="mb-[64px] relative max-w-[553px] after:-z-10 md:after:content[''] after:absolute after:left-0 after:top-[43px] after:w-[104%] after:h-[83.7%] after:bg-[#F9D7D9]">
             <h1 className="w-full relative z-10 pt-8 pb-[31px] pl-[43px] pr-[11px] bg-custom-red text-white md:text-5xl md:leading-[60.48px] font-semibold">
@@ -200,6 +201,18 @@ const ClaimsPage = () => {
             <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
             Your claims are our top priority, handled promptly and professionally. Count on clear communication every step of the way. Trust in our commitment to efficient resolutions.
             </p>
+        </div>
+      </div>
+      <div className="relative pt-[62px] pb-10 aspect-[2.1] bg-[rgba(0,0,0,0.1)]">
+      <Image src="/claims/compensation-bg.png" className="-z-10 object-cover" sizes="100vw" fill alt="background"/>
+        <h3 className="mb-2 text-white text-center md:text-[40px] leading-[50.4px]">
+          Claims Compensation
+        </h3>
+        <p className="mb-[116px] text-center text-white">
+        After the claim is accepted, you have the opportunity to decide your preferred method of compensation
+        </p>
+        <div>
+          <ClaimCompensation />
         </div>
       </div>
       <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[200px] md:mb-[207px] md:mx-20 md:pt-[54px] md:pb-20">
