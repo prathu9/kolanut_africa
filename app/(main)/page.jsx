@@ -68,7 +68,6 @@ export default function Home() {
           <CoverSwiper />
         </div>
       </div>
-      
       <div className="relative max-w-[1920px] h-[280px] px-5 py-5 flex items-center justify-center overflow-hidden box-content md:h-[420px] md:px-10 md:justify-center md:items-stretch md:flex-col">
         <Image
           className="absolute overflow-visible -left-[63%] w-[1920px] h-[300px] object-cover sm:left-[0%]"
@@ -398,7 +397,7 @@ export default function Home() {
             </div>
             <div className="max-w-[522px] mb-6 md:mb-10">
               <h3 className="mb-2 text-custom-grey text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
-                Corporate Propertiess
+                Corporate Properties
               </h3>
               <p className="mb-6 text-sm leading-[21px] text-[#67696D] font-normal md:text-lg md:leading-[27px]">
                 From construction risks to ensuring quality standards, our
