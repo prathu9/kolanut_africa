@@ -24,10 +24,22 @@ module.exports = {
         fadeIn: {
           '0%': {opacity: 0},
           '100%': {opacity: 1}
+        },
+        colorChange: {
+          '0%': {color: "#AF060D"},
+          '25%': {color: "#AF060D"},
+          '26%': {color: "#2E3342"},
+          '100%': {color: "#2E3342"}
+        },
+        showAndHide: {
+          '0%': {visibility: "visible"},
+          '25%': {visibility: "visible"},
+          '26%': {visibility: "hidden"},
+          '100%': {visibility: "hidden"}
         }
       },
       animation: {
-        fadeIn: 'fadeIn 150ms 2s ease-in forwards'
+        fadeIn: 'fadeIn 150ms 2s ease-in forwards',
       }
     },
   },
