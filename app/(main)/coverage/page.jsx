@@ -47,18 +47,18 @@ const faq = [
 const Coverage = () => {
   return (
     <main className="mx-auto max-w-[1920px]">
-      <div className="relative w-full h-[688px]">
+      <div className="relative w-full h-[327px] md:h-[688px]">
         <Image
           src="/coverage/coverage-cover.png"
           sizes="100vw"
           fill
           alt="cover"
         />
-        <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center">
-          <h1 className="max-w-[923px] text-[#FAFBFF] text-[64px] font-bold leading-[80.64px] text-center">
+        <div className="w-full h-full px-[31.5px] absolute top-0 left-0 flex flex-col justify-center items-center">
+          <h1 className="max-w-[923px] text-[#FAFBFF] text-[30px] leading-[37.8px] font-bold text-center md:text-[64px] md:leading-[80.64px]">
             Provide a cover for you on rainy days
           </h1>
-          <p className="mb-12 max-w-[839px] text-[18px] text-[#F0F0F0] leading-[26.1px] text-center font-normal">
+          <p className="mb-12 max-w-[839px] text-base leading-[23.2px] text-[#F0F0F0] text-center font-normal md:text-[18px] md:leading-[26.1px]">
             We have a range of risks tou can insure your property against to
             provide a cover for you in an event of an unforeseen circumstances
           </p>
@@ -80,7 +80,7 @@ const Coverage = () => {
           </p>
         </div>
         <div className="basis-full relative flex justify-center items-center md:basis-[28%] xl:basis-[45%]">
-          <div className="pb-auto relative w-[320px] aspect-[1.3] shadow-[0_4px_60.5px_5px_rgba(244,244,244,0.6)] xl:w-[455px] xl:h-[346px]">
+          <div className="pb-auto relative w-[219px] aspect-[1.3] shadow-[0_4px_60.5px_5px_rgba(244,244,244,0.6)] sm:w-[320px] xl:w-[455px] xl:h-[346px]">
             <Image
               className="absolute object-contain"
               src="/coverage/risk-insurance-option.png"
@@ -89,7 +89,7 @@ const Coverage = () => {
               alt="rick management"
             />
             <svg
-              className="absolute w-[80px] h-[80px] top-[45px] -left-[20%] xl:w-[135px] xl:top-[60px] xl:-left-[22%] xl:h-[135px]"
+              className="absolute w-[50px] top-[30px] -left-[16%] sm:w-[80px] sm:h-[80px] sm:top-[45px] sm:-left-[20%] xl:w-[135px] xl:top-[60px] xl:-left-[22%] xl:h-[135px]"
               viewBox="0 0 135 135"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ const Coverage = () => {
               />
             </svg>
             <svg
-              className="absolute top-[92px] -right-[70px] w-[80px] h-[129px] xl:top-[128px] xl:-right-[100px] xl:w-[113px] xl:h-[182px]"
+              className="absolute w-[50px] top-[13px] -right-[45px] sm:w-[80px] sm:h-[129px] sm:top-[92px] sm:-right-[70px] xl:top-[128px] xl:-right-[100px] xl:w-[113px] xl:h-[182px]"
               width="113"
               height="182"
               viewBox="0 0 113 182"
