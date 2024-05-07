@@ -68,7 +68,7 @@ const ClaimsPage = () => {
           </div>
         </div>
       </div>
-      <div className="mx-5 pt-10 pb-[100px] md:pt-[62px] md:ml-[80px] md:mr-[66px]">
+      <div className="mb-[92px] px-5 pt-10 pb-[100px] bg-[#FDF8F8] md:mb-20 md:pt-[62px] md:pl-[80px] md:pr-[66px]">
         <h2 className="mb-2 text-2xl leading-[30.24px] text-[#5B5B5B] text-left font-bold md:text-center md:text-[40px] md:leading-[50.4px]">
           When to file a claim
         </h2>
@@ -203,7 +203,7 @@ const ClaimsPage = () => {
             </p>
         </div>
       </div>
-      <div className="relative pt-[62px] pb-10 aspect-[2.1] bg-[rgba(0,0,0,0.1)]">
+      <div className="relative pt-[62px] pb-[66px] aspect-[2.1] bg-[rgba(0,0,0,0.1)] md:pb-10">
       <Image src="/claims/compensation-bg.png" className="-z-10 object-cover" sizes="100vw" fill alt="background"/>
         <h3 className="mb-2 text-white text-center font-bold text-2xl leading-[30.24px] md:text-[40px] md:leading-[50.4px]">
           Claims Compensation
