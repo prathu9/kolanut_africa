@@ -10,10 +10,10 @@ const ClaimCompensation = () => {
   };
 
   return (
-    <div className="mx-auto max-w-[670px] w-2/5 p-8 rounded-2xl bg-white">
+    <div className="mx-auto w-11/12 p-8 rounded-2xl bg-white lg:max-w-[670px] lg:w-4/5">
       <div className="mb-[41px] flex gap-8 justify-center">
         <button
-          className={`px-4 py-2 rounded-2xl text-base leading-6 font-normal ${
+          className={`px-4 py-2 rounded-2xl text-sm leading-[21px] font-normal md:text-base md:leading-6 ${
             activeOption === "reimbursement"
               ? "bg-[#1ECA4E] text-white"
               : "bg-white text-[#263238]"
@@ -23,7 +23,7 @@ const ClaimCompensation = () => {
           Reimbursement
         </button>
         <button
-          className={`px-4 py-2 rounded-2xl text-base leading-6 font-normal ${
+          className={`px-4 py-2 rounded-2xl  text-sm leading-[21px] font-normal md:text-base md:leading-6 ${
             activeOption === "replacement"
               ? "bg-[#1ECA4E] text-white"
               : "bg-white text-[#263238]"

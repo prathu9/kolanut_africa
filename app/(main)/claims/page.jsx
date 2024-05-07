@@ -44,14 +44,14 @@ const faq = [
 const ClaimsPage = () => {
   return (
     <main className="max-w-[1920px]">
-      <div className="mb-[116px] flex justify-between md:mt-[203px] md:mx-[118px]">
+      <div className="mx-5 mt-[70.17px] mb-[88px] flex justify-between flex-wrap-reverse gap-y-[35px] md:mx-10 lg:mt-[203px] lg:mx-[118px] lg:mb-[116px]">
         <div className="basis-full md:basis-[48%]">
-          <div className="mb-[64px] relative max-w-[553px] after:-z-10 md:after:content[''] after:absolute after:left-0 after:top-[43px] after:w-[104%] after:h-[83.7%] after:bg-[#F9D7D9]">
-            <h1 className="w-full relative z-10 pt-8 pb-[31px] pl-[43px] pr-[11px] bg-custom-red text-white md:text-5xl md:leading-[60.48px] font-semibold">
+          <div className="mb-[31px] relative max-w-[553px] after:w-[283.86px] after:-z-10 md:after:content[''] after:absolute after:left-0 after:top-[29px] after:h-[43px] after:bg-[#F9D7D9] md:after:w-[104%] md:after:h-[83.7%] md:top-[43px]">
+            <h1 className="w-fit relative z-10 pl-4 pt-[10px] pr-[14px] pb-[11px] font-semibold bg-custom-red text-white text-2xl leading-9 md:mb-[64px] md:w-full md:pt-8 md:pb-[31px] md:pl-[43px] md:pr-[11px] md:text-3xl lg:text-5xl lg:leading-[60.48px]">
               Here at kolanut Africa
             </h1>
           </div>
-          <p className="text-[#444444] font-medium md:text-[28px] md:leading-[42px]">
+          <p className="text-[#444444] font-medium text-sm leading-[21px] md:text-xl lg:text-[28px] lg:leading-[42px]">
             We understand that unexpected events like burglary and fire/natural
             disasters can be stressful. That’s why we are here to guide you
             through the claims process with ease.
@@ -68,18 +68,18 @@ const ClaimsPage = () => {
           </div>
         </div>
       </div>
-      <div className="ml-[80px] mr-[66px] pt-[62px] pb-[100px]">
-        <h2 className="mb-2 text-[#5B5B5B] text-center font-bold md:text-[40px] md:leading-[50.4px]">
+      <div className="mx-5 pt-10 pb-[100px] md:pt-[62px] md:ml-[80px] md:mr-[66px]">
+        <h2 className="mb-2 text-2xl leading-[30.24px] text-[#5B5B5B] text-left font-bold md:text-center md:text-[40px] md:leading-[50.4px]">
           When to file a claim
         </h2>
-        <p className="mx-auto mb-[61px] max-w-[644px] text-center font-normal text-custom-grey md:text-lg md:leading-[26.1px]">
+        <p className="mx-auto mb-[61px] max-w-[644px] font-normal text-sm leading-[20.3px] text-custom-grey md:text-center md:text-lg md:leading-[26.1px]">
           Claims must be filed on or before{" "}
           <span className="text-[#F72A33]">14 days</span> after the incident to
           ensure prompt processing and resolution
         </p>
-        <div className="flex gap-[62px] justify-center">
-          <div className="relative">
-            <div className="overflow-hidden rounded-2xl after:content-[''] after:absolute after:-top-[27px] after:left-12 after:w-[94%] after:h-[114%] after:border after:border-custom-red after:rounded-[20px] w-[448px] h-[380.89px]">
+        <div className="flex gap-[62px] justify-center flex-wrap lg:flex-nowrap">
+          <div className="relative w-full">
+            <div className="w-[95%] aspect-square overflow-hidden rounded-2xl after:content-[''] after:absolute after:-top-[27px] after:left-12 after:w-[90%] after:h-[114%] after:border after:border-custom-red after:rounded-[20px] md:after:max-w-[448px] md:after:max-h-[431px] md:w-[448px] md:h-[380.89px]">
               <div className="relative w-full h-full">
                 <Image
                   src="/claims/fire-warning.png"
@@ -90,7 +90,7 @@ const ClaimsPage = () => {
               </div>
             </div>
           </div>
-          <div className="basis-[60%] max-w-[786px]">
+          <div className="basis-full max-w-[786px] md:basis-[60%]">
             <div className="mt-6 flex gap-4">
               <div>
                 <Fire />
@@ -129,8 +129,8 @@ const ClaimsPage = () => {
           </div>
         </div>
       </div>
-      <div className="mx-20 mb-[153px]">
-        <span className="w-fit flex gap-2 items-center px-[10px] py-2 text-lg font-normal leading-[26.1px] text-custom-red rounded-[20px] bg-[#FEF0F1] shadow-[0_4px_4px_0_rgba(0,0,0,0.1)]">
+      <div className="mx-5 mb-10 md:mx-20 md:mb-[153px]">
+        <span className="w-fit flex gap-2 items-center px-[10px] py-2 text-sm font-normal leading-[20.3px] text-custom-red rounded-[20px] bg-[#FEF0F1] shadow-[0_4px_4px_0_rgba(0,0,0,0.1)] md:text-lg md:leading-[26.1px]">
           <svg
             width="8"
             height="8"
@@ -142,10 +142,10 @@ const ClaimsPage = () => {
           </svg>
           <span>Simplified for you</span>
         </span>
-        <h2 className="mt-8 mb-[94px] text-[40px] leading-[58px] text-custom-grey font-semibold">
+        <h2 className="mt-6 mb-[26px] text-2xl leading-[34.8px] text-custom-grey font-semibold md:mt-8 md:mb-[94px] md:text-[40px] md:leading-[58px]">
           File a claim with ease
         </h2>
-        <h3 className="mb-[55px] text-[28px] leading-[35.28px] font-medium text-custom-grey">
+        <h3 className="mb-[55px] text-sm leading-[17.64px] font-medium text-custom-grey md:text-[28px] md:leading-[35.28px]">
           Steps to process your claims
         </h3>
         <div className="relative w-full aspect-[2.2] rounded-2xl border border-[#DEDEDE]">
@@ -157,19 +157,19 @@ const ClaimsPage = () => {
           />
         </div>
       </div>
-      <div className="mx-[168px] mb-[189px] flex flex-wrap gap-x-8 gap-y-[38px] justify-center">
-        <div className="p-5">
+      <div className="mx-5 mb-[130px] flex flex-wrap gap-x-8 gap-y-10 justify-center md:mx-[168px] md:mb-[189px] md:gap-y-[38px]">
+        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
             <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
                 <span className="text-lg leading-[26.1px] font-normal text-custom-red">1</span>
             </div>
             <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
                 Initiate your claim
             </h3>
-            <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
+            <p className="max-w-[496px] basis-[45%] text-sm leading-[21px] font-normal text-[#6C6C6C] md:text-base md:leading-6">
             To initiate your claim, we offer convenient options tailored to your preference. You can easily begin the process through the online form . Allowing you to submit your claim conveniently.
             </p>
         </div>
-        <div className="p-5">
+        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
             <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
                 <span className="text-lg leading-[26.1px] font-normal text-custom-red">2</span>
             </div>
@@ -180,7 +180,7 @@ const ClaimsPage = () => {
             Easily upload photos, fill forms or attach receipts through our platform. Streamlined submission ensures quicker assessments and resolutions
             </p>
         </div>
-        <div className="p-5">
+        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
             <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
                 <span className="text-lg leading-[26.1px] font-normal text-custom-red">3</span>
             </div>
@@ -191,7 +191,7 @@ const ClaimsPage = () => {
             Track your claims online for transparency. Stay informed about every step of the process. Our platform allows easy access to monitor progress.
             </p>
         </div>
-        <div className="p-5">
+        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
             <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
                 <span className="text-lg leading-[26.1px] font-normal text-custom-red">4</span>
             </div>
@@ -205,17 +205,17 @@ const ClaimsPage = () => {
       </div>
       <div className="relative pt-[62px] pb-10 aspect-[2.1] bg-[rgba(0,0,0,0.1)]">
       <Image src="/claims/compensation-bg.png" className="-z-10 object-cover" sizes="100vw" fill alt="background"/>
-        <h3 className="mb-2 text-white text-center md:text-[40px] leading-[50.4px]">
+        <h3 className="mb-2 text-white text-center font-bold text-2xl leading-[30.24px] md:text-[40px] md:leading-[50.4px]">
           Claims Compensation
         </h3>
-        <p className="mb-[116px] text-center text-white">
+        <p className="max-w-[480px] mx-auto mb-[46px] text-center text-white text-sm leading-[20.3px] font-normal md:max-w-[306px] md:mb-[116px] md:text-lg md:leading-[26.1px]">
         After the claim is accepted, you have the opportunity to decide your preferred method of compensation
         </p>
         <div>
           <ClaimCompensation />
         </div>
       </div>
-      <div className="mx-5 my-[88px] pt-[54px] lg:mx-[258px] md:mt-[200px] md:mb-[207px] md:mx-20 md:pt-[54px] md:pb-20">
+      <div className="mx-5 my-[88px] lg:mx-[258px] md:mt-[200px] md:mb-[207px] md:mx-20 md:pt-[54px] md:pb-20">
         <h2 className="mb-2 text-custom-grey text-2xl leading-[30.24px] font-semibold md:mb-10 md:leading-[50.4px] md:text-[40px] md:text-center">
           Frequently asked questions
         </h2>
