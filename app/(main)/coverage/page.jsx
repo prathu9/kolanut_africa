@@ -109,7 +109,7 @@ const Coverage = () => {
               <text
                 x="-12"
                 y="162"
-                className="fill-custom-red bg-[#FEE6E7] -translate-y-[5px] text-[10px] leading-[12.1px] md:translate-0 md:text-sm"
+                className="fill-custom-red bg-[#FEE6E7] -translate-y-[5px] text-[10px] leading-[12.1px] md:-translate-y-0 md:text-sm"
               >
                 fire
               </text>
@@ -132,12 +132,12 @@ const Coverage = () => {
                 fill="#FEE6E7"
                 rx="12"
                 ry="12"
-                className="w-[70px] h-[18px] rounded-2xl translate-x-[5px] md:w-[79px] md:h-[25px]"
+                className="w-[70px] h-[18px] rounded-2xl translate-x-[5px] md:w-[79px] md:h-[25px] md:translate-x-0"
               />
               <text
                 x="60"
                 y="202"
-                className="fill-custom-red translate-x-[10px] -translate-y-[5px] bg-[#FEE6E7] text-[10px] leading-[12.1px] md:text-sm"
+                className="fill-custom-red translate-x-[10px] -translate-y-[5px] bg-[#FEE6E7] text-[10px] leading-[12.1px] md:text-sm md:translate-x-0 md:-translate-y-0"
               >
                 burglary
               </text>

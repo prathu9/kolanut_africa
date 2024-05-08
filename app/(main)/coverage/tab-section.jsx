@@ -34,7 +34,7 @@ const TabPanelComponent = ({ isActive, content }) => {
   return (
     <div className={`mt-[66px] ${isActive ? "block" : "hidden"}`}>
         <div className="max-w-[645px] px-5 pt-5 pb-10 border-[0.3px] border-[#5B5B5B] rounded-2xl">
-          <div className="mb-10 w-10 h-10 rounded-full bg-[#F1D4D5]">
+          <div className="mb-10 w-10 h-10 flex justify-center items-center rounded-full bg-[#F1D4D5]">
             {content.icon}
           </div>
           <p className="mb-10 text-sm font-normal leading-[21px] md:mb-20 md:text-base md:leading-6 md:text-custom-grey">

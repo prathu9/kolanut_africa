@@ -4,7 +4,7 @@ const tabsData = [
   {
     title: "Burglar",
     content: {
-      icons: <Unlock />,
+      icon: <Unlock />,
       para1:
         " Burglary coverage is designed to safeguard your property and personal belongings against the devastating consequences of  burglary. In the unfortunate event of a break-in, this coverage option provides comprehensive financial protection and support, offering peace of mind and security for your most valued possessions.",
       para2:
@@ -14,7 +14,7 @@ const tabsData = [
   {
     title: "Fire/Natural disaster",
     content: {
-      icons: <Unlock />,
+      icon: <Unlock />,
       para1:
         " Burglary coverage is designed to safeguard your property and personal belongings against the devastating consequences of  burglary. In the unfortunate event of a break-in, this coverage option provides comprehensive financial protection and support, offering peace of mind and security for your most valued possessions.",
       para2:
