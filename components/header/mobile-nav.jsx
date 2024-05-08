@@ -96,7 +96,7 @@ const MobileNav = () => {
                     </Link>
                 </li>
                 <li className="text-base leading-[23.2px] font-normal text-[#F4F2F1]">
-                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/">
+                    <Link onClick={hideMobileNav} className="py-5 block w-full h-full text-center" href="/claims">
                         Claims
                     </Link>
                 </li>
@@ -111,7 +111,7 @@ const MobileNav = () => {
                     </Link>
                 </li>
                 <li className="mt-[64px]">
-                    <Link onClick={hideMobileNav} href="/login" className="px-6 py-3 border-2 border-custom-red text-lg font-normal leading-[26.1px] text-white bg-custom-red rounded-xl">
+                    <Link onClick={hideMobileNav} href="/booking" className="px-6 py-3 border-2 border-custom-red text-lg font-normal leading-[26.1px] text-white bg-custom-red rounded-xl">
                         Get Started
                     </Link>
                 </li>
