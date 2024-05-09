@@ -1,8 +1,13 @@
+"use client";
 import BellIcon from "@/icons/bell-icon";
 import DocumentUploadStatus from "./_component/document-upload-status";
 import Referrals from "./_component/referrals";
+import Image from "next/image";
+import DashboardUserOption from "./_component/dashboard-user-options";
+import { useState } from "react";
 
 const DashboardPage = () => {
+  const [showDocumentStatus, setShowDocumentStatus] = useState(false);
   return (
     <div>
       <header className="w-full px-10 py-[39px] flex justify-between items-center">
@@ -39,13 +44,66 @@ const DashboardPage = () => {
           </button>
         </div>
       </header>
-      <div className="px-10 py-[38px] flex gap-10">
+      <div className="mx-10 my-[38px] flex gap-10">
         <div className="basis-[62%]">
+          {showDocumentStatus ? (
             <DocumentUploadStatus />
+          ) : (
+            <DashboardUserOption />
+          )}
         </div>
-       <div className="basis-[26%]">
-            <Referrals />
-       </div>
+        <div className="basis-[26%]">
+          <Referrals />
+        </div>
+      </div>
+      <div className="flex mx-10 mb-[90px] gap-x-[25px]">
+        <div className="basis-[63%]">
+          <h3 className="mb-4 text-lg leading-[22.68px] font-semibold text-[#444444]">
+            Important
+          </h3>
+          <div className="flex flex-col gap-y-4">
+            <div className="p-5 rounded-lg border border-[#DEDEDE]">
+              <h4 className="mb-[6px]text-base leading-[20.16px] font-medium text-custom-red">
+                Introducing Our New Mobile App!
+              </h4>
+              <p className="text-sm leading-[17.64px] text-[#5B5B5B] font-normal">
+                We&apos;re excited to announce the launch of our brand new
+                mobile app! Now you can manage your insurance policies, file
+                claims, and make payments conveniently on the go.
+              </p>
+            </div>
+            <div className="p-5 rounded-lg border border-[#DEDEDE]">
+              <h4 className="mb-[6px]text-base leading-[20.16px] font-medium text-custom-red">
+                Coverage reviews
+              </h4>
+              <p className="text-sm leading-[17.64px] text-[#5B5B5B] font-normal">
+                Haven&apos;t reviewed your home insurance policy in a while?
+                Take some time to ensure your coverage reflects your current
+                needs.
+              </p>
+            </div>
+            <div className="p-5 rounded-lg border border-[#DEDEDE]">
+              <h4 className="mb-[6px]text-base leading-[20.16px] font-medium text-custom-red">
+                Brief Service Interruption!
+              </h4>
+              <p className="text-sm leading-[17.64px] text-[#5B5B5B] font-normal">
+                We&apos;re performing scheduled maintenance on our systems from
+                6pm to 10pm on 18th of this month . During this time, you may
+                experience limited access to certain features on your dashboard.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="basis-[26%]">
+          <div className="w-[314px] h-[341px] relative rounded-lg">
+            <Image
+              src="/dashboard/dashboard-person.png"
+              sizes="100vw"
+              fill
+              alt="person"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

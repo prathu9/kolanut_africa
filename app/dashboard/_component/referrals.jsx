@@ -14,12 +14,12 @@ const Referrals = () => {
           Invite 10 friends and earn when they Insure their property and get 50%
           off of your next premium payment.
         </p>
-        <h4 className="mb-3 text-[14px] leading-[17.64px] font-medium text-[#444444]">
+        <h4 className="mb-3 text-sm leading-[17.64px] font-medium text-[#444444]">
           Share your referral link
         </h4>
-        <div className="flex">
-          <input className="p-[13px] text-xs text-[#5B5B5B] leading-[15.12px] font-normal border border-[#DEDEDE] rounded" />
-          <button className="px-[10px] py-[9px]">
+        <div className="flex gap-[13px]">
+          <input className="basis-[72.4%] p-[13px] text-xs text-[#5B5B5B] leading-[15.12px] font-normal border border-[#DEDEDE] rounded" />
+          <button className="flex justify-center items-center basis-[16.8%] px-[10px] py-[9px] aspect-square rounded bg-custom-red">
             <CopySuccess />
           </button>
         </div>

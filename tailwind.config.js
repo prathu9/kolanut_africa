@@ -36,7 +36,7 @@ module.exports = {
           '25%': {visibility: "visible"},
           '26%': {visibility: "hidden"},
           '100%': {visibility: "hidden"}
-        }
+        },
       },
       animation: {
         fadeIn: 'fadeIn 150ms 2s ease-in forwards',
