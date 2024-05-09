@@ -50,9 +50,10 @@ const PolicyItem = () => {
               alt="brand"
             />
           </div>
-          <div>
-            <span>Active</span>
-          </div>
+          <div className="flex items-center">
+                <span className="mr-2 w-2 h-2 bg-[#38A320] rounded-full"></span>
+                <span className="text-xs leading-[15.12px] text-[#38A320]">Active</span>
+              </div>
           <div>
             <DotMenuIcon />
           </div>
