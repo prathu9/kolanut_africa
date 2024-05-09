@@ -95,13 +95,14 @@ const DashboardPage = () => {
           </div>
         </div>
         <div className="basis-[26%]">
-          <div className="w-[314px] h-[341px] relative rounded-lg">
+          <div className="w-[314px] h-[341px] relative rounded-lg overflow-hidden after:absolute after:w-full after:h-full after:bg-gradient-to-t after:from-[#1A1A1A] after:from-2%">
             <Image
               src="/dashboard/dashboard-person.png"
               sizes="100vw"
               fill
               alt="person"
             />
+            <span className="w-[80%] absolute left-[29px] bottom-[49px] z-10 text-[20px] leading-[25.2px] font-extrabold text-white">Get 10% off<br/> your home Insurance when you renew online.</span>
           </div>
         </div>
       </div>
