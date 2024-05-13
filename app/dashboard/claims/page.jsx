@@ -9,7 +9,7 @@ import SavedClaim from "./_components/saved-claim";
 import NoClaims from "./_components/no-claims";
 
 const ClaimsPage = () => {
-  const [activeClaims, setActiveClaims] = useState(null);
+  const [activeClaims, setActiveClaims] = useState(true);
   const [savedClaims, setSavedCLaims] = useState(null);
 
   return (

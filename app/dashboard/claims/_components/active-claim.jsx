@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ActiveClaim = () => {
-  const [claimStatus, setClaimStatus] = useState("review");
+  const [claimStatus, setClaimStatus] = useState("approved");
+  
   return (
     <div className="flex justify-between px-6 py-4 border border-[#CACACA] bg-[#FCFCFC] rounded-lg">
       <div>

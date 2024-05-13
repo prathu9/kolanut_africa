@@ -31,7 +31,7 @@ const Accordion = ({accordionItems}) => {
               />
                 </svg>
                 </button>
-                <div className={`max-w-[843px] mt-2 text-[#535763] text-lg leading-[26.1px] font-normal overflow-hidden transition-all ease-in-out duration-300 ${activeIndex === index? `max-h-96 mb-[22px]`:"max-h-0 mb-0"}`}>{description}</div>
+                <div className={`max-w-[843px] mt-2 text-[#535763] text-lg leading-[26.1px] font-normal overflow-hidden transition-all ease-in-out duration-300 ${activeIndex === index? `max-h-[1000px] mb-[22px]`:"max-h-0 mb-0"}`}>{description}</div>
             </div>
            ))}
         </div>
