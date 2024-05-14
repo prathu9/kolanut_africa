@@ -118,7 +118,7 @@ const ClaimsPage = () => {
         <h2 className="mx-auto mb-2 text-2xl leading-[30.24px] text-[#5B5B5B] text-left font-bold md:text-center md:text-[40px] md:leading-[50.4px]">
           When to file a claim
         </h2>
-        <p className="mb-[61px] max-w-[644px] font-normal text-sm leading-[20.3px] text-custom-grey md:text-center md:text-lg md:leading-[26.1px]">
+        <p className="mb-[61px] mx-auto max-w-[644px] font-normal text-sm leading-[20.3px] text-custom-grey md:text-center md:text-lg md:leading-[26.1px]">
           Claims must be filed on or before{" "}
           <span className="text-[#F72A33]">14 days</span> after the incident to
           ensure prompt processing and resolution
@@ -194,68 +194,100 @@ const ClaimsPage = () => {
         <h3 className="mb-[55px] text-sm leading-[17.64px] font-medium text-custom-grey md:text-[28px] md:leading-[35.28px]">
           Steps to process your claims
         </h3>
-        <div className="relative w-full aspect-[2.2] rounded-2xl border border-[#DEDEDE]">
+        <div className="relative w-full aspect-[2.2] rounded-2xl border border-[#DEDEDE] overflow-hidden">
           <Image
             src="/claims/claim-settlement.png"
             sizes="100vw"
             fill
             alt="claim settlement"
           />
+          <div className="w-[180px] aspect-[0.9] z-10 absolute bottom-0 right-[12.5%] rounded-t-2xl overflow-hidden shadow-[0_4.51px_9.02px_-0.38px_rgba(0,0,0,0.1)] hidden md:block lg:w-[284px]">
+            <Image
+              src="/claims/claim-settlement-image-2.png"
+              className="object-cover"
+              sizes="100vw"
+              fill
+              alt="claim settlement"
+            />
+          </div>
         </div>
       </div>
-      <div className="mx-5 mb-[130px] flex flex-wrap gap-x-8 gap-y-10 justify-center md:mx-[168px] md:mb-[189px] md:gap-y-[38px]">
-        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
-            <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
-                <span className="text-lg leading-[26.1px] font-normal text-custom-red">1</span>
-            </div>
-            <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
-                Initiate your claim
-            </h3>
-            <p className="max-w-[496px] basis-[45%] text-sm leading-[21px] font-normal text-[#6C6C6C] md:text-base md:leading-6">
-            To initiate your claim, we offer convenient options tailored to your preference. You can easily begin the process through the online form . Allowing you to submit your claim conveniently.
-            </p>
+      <div className="mx-5 mb-[130px] flex flex-wrap gap-x-6 gap-y-16 justify-center md:mb-[189px] md:gap-y-[38px] lg:mx-[50px] 2xl:mx-[168px]">
+        <div className="p-5 max-w-[612px] h-fit basis-full rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC] md:basis-[48%]">
+          <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
+            <span className="text-lg leading-[26.1px] font-normal text-custom-red">
+              1
+            </span>
+          </div>
+          <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
+            Initiate your claim
+          </h3>
+          <p className="max-w-[496px] basis-[45%] text-sm leading-[21px] font-normal text-[#6C6C6C] md:text-base md:leading-6">
+            To initiate your claim, we offer convenient options tailored to your
+            preference. You can easily begin the process through the online form
+            . Allowing you to submit your claim conveniently.
+          </p>
         </div>
-        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
-            <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
-                <span className="text-lg leading-[26.1px] font-normal text-custom-red">2</span>
-            </div>
-            <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
+        <div className="p-5 max-w-[612px] h-fit basis-full rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC] md:basis-[48%]">
+          <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
+            <span className="text-lg leading-[26.1px] font-normal text-custom-red">
+              2
+            </span>
+          </div>
+          <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
             Submit Documentation
-            </h3>
-            <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
-            Easily upload photos, fill forms or attach receipts through our platform. Streamlined submission ensures quicker assessments and resolutions
-            </p>
+          </h3>
+          <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
+            Easily upload photos, fill forms or attach receipts through our
+            platform. Streamlined submission ensures quicker assessments and
+            resolutions
+          </p>
         </div>
-        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
-            <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
-                <span className="text-lg leading-[26.1px] font-normal text-custom-red">3</span>
-            </div>
-            <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
+        <div className="p-5 max-w-[612px] h-fit basis-full rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC] md:basis-[48%]">
+          <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
+            <span className="text-lg leading-[26.1px] font-normal text-custom-red">
+              3
+            </span>
+          </div>
+          <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
             Track your claim
-            </h3>
-            <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
-            Track your claims online for transparency. Stay informed about every step of the process. Our platform allows easy access to monitor progress.
-            </p>
+          </h3>
+          <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
+            Track your claims online for transparency. Stay informed about every
+            step of the process. Our platform allows easy access to monitor
+            progress.
+          </p>
         </div>
-        <div className="p-5 rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC]">
-            <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
-                <span className="text-lg leading-[26.1px] font-normal text-custom-red">4</span>
-            </div>
-            <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
+        <div className="p-5 max-w-[612px] h-fit basis-full rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC] md:basis-[48%]">
+          <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
+            <span className="text-lg leading-[26.1px] font-normal text-custom-red">
+              4
+            </span>
+          </div>
+          <h3 className="mb-6 text-base leading-[20.16px] text-custom-grey font-semibold">
             Receive Resolution
-            </h3>
-            <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
-            Your claims are our top priority, handled promptly and professionally. Count on clear communication every step of the way. Trust in our commitment to efficient resolutions.
-            </p>
+          </h3>
+          <p className="max-w-[496px] basis-[45%] text-base leading-6 font-normal text-[#6C6C6C]">
+            Your claims are our top priority, handled promptly and
+            professionally. Count on clear communication every step of the way.
+            Trust in our commitment to efficient resolutions.
+          </p>
         </div>
       </div>
       <div className="relative pt-[62px] pb-[66px] aspect-[2.1] bg-[rgba(0,0,0,0.1)] md:pb-10">
-      <Image src="/claims/compensation-bg.png" className="-z-10 object-cover" sizes="100vw" fill alt="background"/>
+        <Image
+          src="/claims/compensation-bg.png"
+          className="-z-10 object-cover"
+          sizes="100vw"
+          fill
+          alt="background"
+        />
         <h3 className="mb-2 text-white text-center font-bold text-2xl leading-[30.24px] md:text-[40px] md:leading-[50.4px]">
           Claims Compensation
         </h3>
-        <p className="max-w-[480px] mx-auto mb-[46px] text-center text-white text-sm leading-[20.3px] font-normal md:max-w-[306px] md:mb-[116px] md:text-lg md:leading-[26.1px]">
-        After the claim is accepted, you have the opportunity to decide your preferred method of compensation
+        <p className="max-w-[306px] mx-auto mb-[46px] text-center text-white text-sm leading-[20.3px] font-normal md:max-w-full md:mb-[116px] md:text-lg md:leading-[26.1px]">
+          After the claim is accepted, you have the opportunity to decide your
+          preferred method of compensation
         </p>
         <div>
           <ClaimCompensation />

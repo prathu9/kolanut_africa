@@ -2,9 +2,11 @@
 import SafeHomeIcon from "@/icons/safe-home";
 import Image from "next/image";
 import { useState } from "react";
+import DischargeVoucher from "./discharge-voucher";
 
 const ActiveClaim = () => {
   const [claimStatus, setClaimStatus] = useState("approved");
+  const [showDischargeVoucher, setShowDischargeVoucher] = useState(false);
   
   return (
     <div className="flex justify-between px-6 py-4 border border-[#CACACA] bg-[#FCFCFC] rounded-lg">
@@ -53,6 +55,10 @@ const ActiveClaim = () => {
           Discharge voucher
         </button>}
       </div>
+      {
+        showDischargeVoucher &&
+        <DischargeVoucher />
+      }
     </div>
   );
 };

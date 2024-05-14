@@ -34,7 +34,7 @@ const ClaimCompensation = () => {
         </button>
       </div>
       {activeOption === "reimbursement" ? (
-        <div className="p-8">
+        <div className="p-8 border-[0.3px] border-[#5B5B5B] rounded-2xl">
           <div className="w-10 h-10 mb-6 flex justify-center items-center rounded-lg bg-[#FBFBFB] border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
             <Reimbursement />
           </div>
@@ -47,7 +47,7 @@ const ClaimCompensation = () => {
           </p>
         </div>
       ) : (
-        <div className="p-8">
+        <div className="p-8 border-[0.3px] border-[#5B5B5B] rounded-2xl">
            <div className="w-10 h-10 mb-6 flex justify-center items-center rounded-lg bg-[#FBFBFB] border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
             <Reimbursement />
           </div>
