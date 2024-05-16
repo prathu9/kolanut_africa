@@ -4,7 +4,7 @@ const PropertyRiskManagement = () => {
   return (
     <div className="flex mt-9 pb-[51px] justify-center lg:ml-[80px] md:pb-[151px] md:ml-[40px] md:mt-[118px]">
       <div>
-        <div className="max-w-[522px] mb-6 md:mb-10">   
+        <div className="max-w-[522px] mb-6 md:mb-10">
           <h3 className="mb-2 animate-[colorChange_16s_4s_ease-in_infinite] text-custom-red text-lg font-semibold leading-[21.6px] md:leading-[28.8px] md:text-2xl">
             Personal Properties
           </h3>
@@ -56,21 +56,21 @@ const PropertyRiskManagement = () => {
           height={643}
           alt="property"
         />
-         <Image
+        <Image
           className="absolute right-0 animate-[showAndHide_16s_8s_ease-in_infinite]"
           src="/homepage/property-2.png"
           width={594}
           height={643}
           alt="property"
         />
-         <Image
+        <Image
           className="absolute right-0 animate-[showAndHide_16s_12s_ease-in_infinite]"
           src="/homepage/property-3.png"
           width={594}
           height={643}
           alt="property"
         />
-         <Image
+        <Image
           className="absolute right-0 animate-[showAndHide_16s_16s_ease-in_infinite]"
           src="/homepage/property-1.png"
           width={594}

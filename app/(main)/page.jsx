@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Accordion from "@/components/accordion/accordion";
 import CoverSwiper from "./_component/cover-swiper";
 import PropertyRiskManagement from "./_component/property-risk-management";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -92,9 +94,15 @@ const faq = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[1920px]">
+    <main className="mx-auto max-w-[1920px] overflow-x-hidden">
       <div className="mb-[120px] px-4 flex flex-wrap justify-center md:gap-8 md:px-20 lg:flex-nowrap md:mb-[160px]">
-        <div className="basis-[full] mt-[88.17px] font-semibold text-custom-grey lg:basis-[40%] text-center md:mt-[116px] md:text-left">
+        <motion.div
+          initial={{ x: "-100%", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, type: "spring" }}
+          className="basis-[full] mt-[88.17px] font-semibold text-custom-grey lg:basis-[40%] text-center md:mt-[116px] md:text-left"
+        >
           <h1 className="text-3xl leading-[36px] md:text-5xl md:leading-[57.6px]">
             Home insurance policy tailored for everyone
           </h1>
@@ -110,10 +118,16 @@ export default function Home() {
             Save up to N100,000 by comparing quotes from the top 10+ insurance
             Companies
           </p>
-        </div>
-        <div className="mt-[44px] mx-6 basis-full aspect-[1.28] rounded-3xl overflow-hidden lg:basis-[40%] md:mt-[109.6px]">
+        </motion.div>
+        <motion.div
+          initial={{ x: "100%", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, type: "spring" }}
+          className="mt-[44px] mx-6 basis-full aspect-[1.28] rounded-3xl overflow-hidden lg:basis-[40%] md:mt-[109.6px]"
+        >
           <CoverSwiper />
-        </div>
+        </motion.div>
       </div>
       <div className="relative max-w-[1920px] h-[280px] px-5 py-5 flex items-center justify-center overflow-hidden box-content md:h-[420px] md:px-10 md:justify-center md:items-stretch md:flex-col">
         <Image
@@ -123,7 +137,13 @@ export default function Home() {
           src="/homepage/wave-vector.svg"
           alt="wave"
         />
-        <div className="relative z-10">
+        <motion.div
+          initial={{ y: "100%", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, type: "spring" }}
+          className="relative z-10"
+        >
           <h2 className="mb-[54px] text-[#FAFBFF] text-center text-base font-semibold leading-[20.16px] sm:leading-[30.24px] sm:text-2xl">
             We partner with Top Insurance companies
           </h2>
@@ -161,9 +181,15 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px] md:pb-[54px]">
+      <motion.div
+        initial={{ y: "100%", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2, type: "spring" }}
+        className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px] md:pb-[54px]"
+      >
         <h2 className="mb-[33px] text-2xl leading-[50px] font-bold text-[#5B5B5B] md:mb-[74px] md:text-center md:text-[40px]">
           Why choose us?
         </h2>
@@ -250,7 +276,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="mt-[44px] mx-5 relative md:mt-[200px] md:mx-0 lg:mx-20">
         <h2 className="text-custom-grey text-2xl font-semibold leading-[30.24px] md:text-center md:text-[40px] md:leading-[50.4px]">
           3 Steps to safeguarding your Home
@@ -289,7 +315,13 @@ export default function Home() {
         </div>
       </div>
       <div className="px-5 mt-[88.23px] mb-[88px] flex items-center justify-between gap-[63px] flex-wrap lg:mx-20 lg:mb-[200px] lg:mt-[200px] md:items-start">
-        <div className="basis-full md:basis-2/5">
+        <motion.div
+          initial={{ x: "-100%", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, type: "spring" }}
+          className="basis-full md:basis-2/5"
+        >
           <h2 className="mb-[24px] text-2xl text-center font-semibold leading-[30.24px] md:leading-[50.4px] md:text-[40px] md:text-left">
             On the spot assistance from expert advisors
           </h2>
@@ -372,7 +404,7 @@ export default function Home() {
               </span>
             </li>
           </ul>
-        </div>
+        </motion.div>
         <figure className="basis-full  relative md:basis-[45%] hidden md:block">
           <div className="aspect-square rounded-t-[35.6px] relative overflow-hidden">
             <Image
@@ -402,14 +434,21 @@ export default function Home() {
         </figure>
       </div>
       <div className="pt-[49px] px-5 md:pt-[100px] bg-gradient-1">
-        <h2 className="max-w-[800px] mx-auto mb-2 text-custom-grey font-semibold text-2xl leading-[30.24px] text-left md:text-[40px] md:leading-[50.4px] md:text-center">
-          Protect your most Treasured Space Against Risk
-        </h2>
-        <p className="max-w-[656px] mx-auto text-left text-[#535763] font-normal text-sm leading-[20.3px] md:text-center md:text-lg md:leading-[26.1px]">
-          Our new suite of Home  insurance products to help you protect your
-          home, furniture, and beautiful family memories.
-        </p>
-        <PropertyRiskManagement />
+        <motion.div
+          initial={{ y: "40%", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, type: "spring" }}
+        >
+          <h2 className="max-w-[800px] mx-auto mb-2 text-custom-grey font-semibold text-2xl leading-[30.24px] text-left md:text-[40px] md:leading-[50.4px] md:text-center">
+            Protect your most Treasured Space Against Risk
+          </h2>
+          <p className="max-w-[656px] mx-auto text-left text-[#535763] font-normal text-sm leading-[20.3px] md:text-center md:text-lg md:leading-[26.1px]">
+            Our new suite of Home  insurance products to help you protect your
+            home, furniture, and beautiful family memories.
+          </p>
+          <PropertyRiskManagement />
+        </motion.div>
       </div>
       <div className="mt-[88px] mx-5 mb-[88px] md:pt-20 md:mt-[200px] md:mx-20 md:mb-20">
         <h2 className="mb-8 text-2xl leading-[30.24px] font-semibold md:mb-14 md:text-center md:text-[40px] md:leading-[50.4px]">
@@ -458,7 +497,13 @@ export default function Home() {
         </div>
       </div>
       <div className="mx-5 flex gap-8 flex-wrap justify-center md:mt-[200px] lg:gap-[125px] lg:mx-20">
-        <div className="basis-full md:max-w-[575px] md:basis-[42%]">
+        <motion.div
+          initial={{ y: "40%", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, type: "spring" }}
+          className="basis-full md:max-w-[575px] md:basis-[42%]"
+        >
           <h2 className="mb-2 text-custom-grey text-2xl leading-[34.8px] font-semibold md:text-5xl md:leading-[69.6px]">
             The Kolanut shield{" "}
             <span className="text-custom-red">of Honour</span>
@@ -467,7 +512,7 @@ export default function Home() {
             Explore our comprehensive list of real estate partners offering
             complete coverage on housing options
           </p>
-        </div>
+        </motion.div>
         <div className="flex flex-wrap gap-x-20 gap-y-6 basis-full md:max-w-[537px] md:basis-[42%]">
           <div>
             <Image
