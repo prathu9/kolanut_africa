@@ -10,8 +10,8 @@ const ClaimCompensation = () => {
   };
 
   return (
-    <div className="mx-auto w-11/12 p-8 rounded-2xl bg-white lg:max-w-[670px] lg:w-4/5">
-      <div className="mb-[41px] flex gap-8 justify-center">
+    <div className="mx-auto w-11/12 p-5 rounded-2xl bg-white lg:max-w-[670px] lg:w-4/5 sm:p-8">
+      <div className="mb-[41px] flex gap-2 justify-center md:gap-8">
         <button
           className={`px-4 py-2 rounded-2xl text-sm leading-[21px] font-normal md:text-base md:leading-6 ${
             activeOption === "reimbursement"
@@ -34,11 +34,11 @@ const ClaimCompensation = () => {
         </button>
       </div>
       {activeOption === "reimbursement" ? (
-        <div className="p-8 border-[0.3px] border-[#5B5B5B] rounded-2xl">
+        <div className="p-4 border-[0.3px] border-[#5B5B5B] rounded-2xl sm:p-8">
           <div className="w-10 h-10 mb-6 flex justify-center items-center rounded-lg bg-[#FBFBFB] border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
             <Reimbursement />
           </div>
-          <p className="text-[#444444] text-base font-normal leading-6">
+          <p className="text-sm leading-[21px] font-normal text-[#444444] md:text-base md:leading-6">
             Receive financial compensation for the value of your lost or damaged
             items. This method offers flexibility, allowing you to use the funds
             as needed for replacements, repairs or other expenses. It provides
@@ -47,11 +47,11 @@ const ClaimCompensation = () => {
           </p>
         </div>
       ) : (
-        <div className="p-8 border-[0.3px] border-[#5B5B5B] rounded-2xl">
+        <div className="p-4 border-[0.3px] border-[#5B5B5B] rounded-2xl sm:p-8">
            <div className="w-10 h-10 mb-6 flex justify-center items-center rounded-lg bg-[#FBFBFB] border border-[#DFDFDF] shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]">
             <Reimbursement />
           </div>
-          <p>
+          <p className="text-sm leading-[21px] font-normal text-[#444444] md:text-base md:leading-6">
             Receive financial compensation for the value of your lost or damaged
             items. This method offers flexibility, allowing you to use the funds
             as needed for replacements, repairs or other expenses. It provides

@@ -32,7 +32,7 @@ const ClaimsPage = () => {
           </div>
         </div>
       </div>
-      <div className="mb-[92px] px-5 pt-10 pb-[100px] bg-[#FDF8F8] md:mb-20 md:pt-[62px] md:pl-[80px] md:pr-[66px]">
+      <div className="mb-[92px] px-5 pt-10 pb-[74px] bg-[#FDF8F8] md:mb-20 md:pt-[62px] md:pl-[80px] md:pr-[66px] md:pb-[100px]">
         <h2 className="mx-auto mb-2 text-2xl leading-[30.24px] text-[#5B5B5B] text-left font-bold md:text-center md:text-[40px] md:leading-[50.4px]">
           When to file a claim
         </h2>
@@ -67,13 +67,13 @@ const ClaimsPage = () => {
           <div className="basis-full max-w-[786px] md:basis-[60%]">
             <div className="mt-6 flex gap-4">
               <div>
-                <Fire />
+                <Fire className="w-10 h-10 md:w-12 md:h-12" />
               </div>
               <div>
-                <h3 className="mb-2 text-custom-red text-2xl leading-[30.24px] font-semibold">
+                <h3 className="mb-2 text-custom-red text-base leading-[20.16px] font-semibold md:text-2xl md:leading-[30.24px]">
                   Fire or Natural disaster
                 </h3>
-                <p className="text-base leading-6 font-medium text-[#5B5B5B]">
+                <p className="text-sm leading-[21px] font-medium text-[#5B5B5B] md:text-base md:leading-6">
                   When facing the aftermath of a fire or natural disaster, such
                   as a hurricane, flood, or earthquake, navigating the insurance
                   claims process can feel daunting. However, having the right
@@ -84,13 +84,13 @@ const ClaimsPage = () => {
             </div>
             <div className="mt-16 flex gap-4">
               <div>
-                <Fire />
+                <Fire className="w-10 h-10 md:w-12 md:h-12" />
               </div>
               <div>
-                <h3 className="mb-2 text-custom-red text-2xl leading-[30.24px] font-semibold">
+                <h3 className="mb-2 text-custom-red text-base leading-[20.16px] font-semibold md:text-2xl md:leading-[30.24px]">
                   Burglary
                 </h3>
-                <p className="text-base leading-6 font-medium text-[#5B5B5B]">
+                <p className="text-sm leading-[21px] font-medium text-[#5B5B5B] md:text-base md:leading-6">
                   A burglary can result in stolen belongings, property damage,
                   and a sense of insecurity in your own home. Whether it&apos;s
                   a break-in while you&apos;re away or a forced entry during the
@@ -146,7 +146,7 @@ const ClaimsPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="mx-5 mb-[130px] flex flex-wrap gap-x-6 gap-y-16 justify-center md:mb-[189px] md:gap-y-[38px] lg:mx-[50px] 2xl:mx-[168px]">
+      <div className="mx-5 mb-[130px] flex flex-wrap gap-x-6 gap-y-10 justify-center md:mb-[189px] md:gap-y-[38px] lg:mx-[50px] 2xl:mx-[168px]">
         <div className="p-5 max-w-[612px] h-fit basis-full rounded-2xl border border-[#FCE7E5] bg-[#FFFEFC] md:basis-[48%]">
           <div className="mb-8 w-10 h-10 flex justify-center items-center rounded-full bg-[#FCE7E5]">
             <span className="text-lg leading-[26.1px] font-normal text-custom-red">
