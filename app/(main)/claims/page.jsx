@@ -2,7 +2,7 @@
 import Fire from "@/icons/fire";
 import Image from "next/image";
 import ClaimCompensation from "../_component/claim-compensation";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Faq from "../_component/faq";
 
 const ClaimsPage = () => {
@@ -43,14 +43,24 @@ const ClaimsPage = () => {
         </p>
         <div className="flex gap-[62px] justify-center flex-wrap lg:flex-nowrap">
           <div className="relative w-full">
-            <div className="w-[95%] aspect-square overflow-hidden rounded-2xl after:content-[''] after:absolute after:-top-[27px] after:left-12 after:w-[90%] after:h-[114%] after:border after:border-custom-red after:rounded-[20px] md:after:max-w-[448px] md:after:max-h-[431px] md:w-[448px] md:h-[380.89px]">
-              <div className="relative w-full h-full">
+            <div className="w-full aspect-square overflow-hidden rounded-2xl after:content-[''] after:absolute after:-top-[21px] after:left-12 after:w-[90%] after:h-[114%] after:border after:border-custom-red after:rounded-[20px] md:after:max-w-[448px] md:after:max-h-[431px] md:after:-top-[27px] md:w-[448px] md:h-[380.89px]">
+              <div className="relative w-full h-full"> 
+              <motion.div whileInView={{opacity: [1, 1, 0, 0, 1]}} transition={{repeat: Infinity, duration: 4}} className="absolute w-full h-full top-0 left-0 -translate-1/2 z-10">
                 <Image
                   src="/claims/fire-warning.png"
                   sizes="100vw"
                   fill
                   alt="fire warning"
                 />
+              </motion.div>
+              <motion.div whileInView={{opacity: [0, 0, 1, 1, 0]}} transition={{repeat: Infinity, duration: 4}}  className="absolute w-full h-full top-0 left-0 -translate-1/2 z-10">
+                <Image
+                  src="/claims/burglar-warning.jpg"
+                  sizes="110vw"
+                  fill
+                  alt="burglar warning"
+                />
+              </motion.div>
               </div>
             </div>
           </div>
@@ -119,7 +129,13 @@ const ClaimsPage = () => {
             fill
             alt="claim settlement"
           />
-          <motion.div initial={{y: "100%"}} whileInView={{y: 0}} viewport={{once: true}} transition={{ease: "easeOut", duration: "0.4"}} className="w-[180px] aspect-[0.9] z-10 absolute bottom-0 right-[12.5%] rounded-t-2xl overflow-hidden shadow-[0_4.51px_9.02px_-0.38px_rgba(0,0,0,0.1)] hidden md:block lg:w-[284px]">
+          <motion.div
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true }}
+            transition={{ ease: "easeOut", duration: "0.4" }}
+            className="w-[180px] aspect-[0.9] z-10 absolute bottom-0 right-[12.5%] rounded-t-2xl overflow-hidden shadow-[0_4.51px_9.02px_-0.38px_rgba(0,0,0,0.1)] hidden md:block lg:w-[284px]"
+          >
             <Image
               src="/claims/claim-settlement-image-2.png"
               className="object-cover"

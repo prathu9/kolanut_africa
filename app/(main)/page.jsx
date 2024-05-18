@@ -141,7 +141,7 @@ export default function Home() {
           initial={{ y: "100%", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.2, type: "spring" }}
+          transition={{ duration: 1.2, type: "spring", damping: 12 }}
           className="relative z-10"
         >
           <h2 className="mb-[54px] text-[#FAFBFF] text-center text-base font-semibold leading-[20.16px] sm:leading-[30.24px] sm:text-2xl">
@@ -184,10 +184,10 @@ export default function Home() {
         </motion.div>
       </div>
       <motion.div
-        initial={{ y: "100%", opacity: 0 }}
+        initial={{ y: "10%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.2, type: "spring" }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1.2, type: "spring", damping: 8 }}
         className="pt-[140.55px] pb-[44px] px-5 lg:px-24 md:pt-[200px] md:pb-[54px]"
       >
         <h2 className="mb-[33px] text-2xl leading-[50px] font-bold text-[#5B5B5B] md:mb-[74px] md:text-center md:text-[40px]">
@@ -330,7 +330,7 @@ export default function Home() {
             help whenever you need advice, from navigating claims to adjusting
             coverage after big life events.
           </p>
-          <figure className="basis-full aspect-square relative md:basis-[45%] block md:hidden">
+          <motion.figure initial={{x: 0}} animate={{x:0}} className="basis-full aspect-square relative md:basis-[45%] block md:hidden">
             <div className="aspect-square rounded-t-[35.6px] relative overflow-hidden">
               <Image
                 className="absolute top-[17px] right-[41.93px] z-10"
@@ -356,7 +356,7 @@ export default function Home() {
                 </ul>
               </figcaption>
             </div>
-          </figure>
+          </motion.figure>
           <h3 className="mt-[60px] mb-[32px] text-lg leading-[22.68px] text-custom-grey font-semibold md:text-[28px] md:leading-[35.8px]">
             Supported by empathetic experts
           </h3>
@@ -438,7 +438,7 @@ export default function Home() {
           initial={{ y: "40%", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, type: "spring" }}
+          transition={{ duration: 1, type: "spring", damping: 14 }}
         >
           <h2 className="max-w-[800px] mx-auto mb-2 text-custom-grey font-semibold text-2xl leading-[30.24px] text-left md:text-[40px] md:leading-[50.4px] md:text-center">
             Protect your most Treasured Space Against Risk
@@ -498,7 +498,7 @@ export default function Home() {
       </div>
       <div className="mx-5 flex gap-8 flex-wrap justify-center md:mt-[200px] lg:gap-[125px] lg:mx-20">
         <motion.div
-          initial={{ y: "40%", opacity: 0 }}
+          initial={{ y: "100%", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, type: "spring" }}
